@@ -33,7 +33,12 @@
 // @lc code=start
 
 // 时间复杂度为n(方法与twoSum2类似)
-func twoSum1(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
+	return twoSum3(nums, target)
+}
+
+// 时间复杂度为n
+func twoSum3(nums []int, target int) []int {
 	vMap := make(map[int]int)
 	for index, item := range nums {
 		remainVal := target - item
