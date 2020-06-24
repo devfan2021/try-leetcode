@@ -68,6 +68,24 @@
 
 // @lc code=start
 func removeElement(nums []int, val int) int {
+	return removeElement2(nums, val)
+}
+
+// 利用错位进行简化代码
+func removeElement2(nums []int, val int) int {
+	index := 0
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != val {
+			nums[index] = nums[i]
+			index++
+		}
+	}
+	nums = nums[0:index]
+	return index
+}
+
+// 各种判断，逻辑有点太复杂，不是最简便方法
+func removeElement1(nums []int, val int) int {
 
 	count := 0
 	total := len(nums)
@@ -97,4 +115,3 @@ func removeElement(nums []int, val int) int {
 }
 
 // @lc code=end
-
