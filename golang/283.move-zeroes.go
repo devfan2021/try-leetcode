@@ -32,6 +32,22 @@
 
 // @lc code=start
 func moveZeroes(nums []int) {
+	moveZeroes2(nums)
+}
+
+// 简化版本，直接两两交互
+func moveZeroes2(nums []int) {
+	for i, j := 0, 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			if i != j { // 如果i,j相同，不用进行替换
+				nums[i], nums[j] = nums[j], nums[i]
+			}
+			j++
+		}
+	}
+}
+
+func moveZeroes1(nums []int) {
 	count := 0
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != 0 {
