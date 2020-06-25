@@ -1,4 +1,7 @@
-import "math/bits"
+import (
+	"math"
+	"math/bits"
+)
 
 /*
  * @lc app=leetcode id=414 lang=golang
@@ -55,6 +58,10 @@ import "math/bits"
 
 // @lc code=start
 func thirdMax(nums []int) int {
+	return thirdMax2(nums)
+}
+
+func thirdMax1(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
 	}
@@ -89,6 +96,47 @@ func thirdMax(nums []int) int {
 	}
 
 	return third
+}
+
+func thirdMax2(nums []int) int {
+	var m1, m2, m3 int = math.MinInt64, math.MinInt64, math.MinInt64
+
+	for _, v := range nums {
+		if v == m1 || v == m2 || v == m3 {
+			continue
+		}
+
+		if m1 == math.MinInt64 || v > m1 {
+			m3 = m2
+			m2 = m1
+			m1 = v
+		} else if m2 == math.MinInt64 || v > m2 {
+			m3 = m2
+			m2 = v
+		} else if m3 == math.MinInt64 || v > m3 {
+			m3 = v
+		}
+	}
+
+	if m3 == math.MinInt64 {
+		return max(m1, m2)
+	}
+
+	return m3
+}
+
+func max(x, y int) int {
+	if x < y {
+		return y
+	}
+	return x
+}
+
+func min(x, y int) int {
+	if x > y {
+		return y
+	}
+	return x
 }
 
 // [1,1,2]\n2
