@@ -43,6 +43,11 @@
 // @lc code=start
 // 彻底失败，浪费的时间比较长
 func addBinary(a string, b string) string {
+	return addBinary2(a, b)
+}
+
+// 自己写的一直有问题，暂时先放一放
+func addBinary2(a string, b string) string {
 	if a == "0" {
 		return b
 	} else if b == "0" {
@@ -77,7 +82,9 @@ func addBinary(a string, b string) string {
 
 		// 0 (0 0), 0 (0 1), 1 (0 0),
 		// 0 (1 1) 1 (1 1) 1 (0, 1)
-		curry = aInt&bInt | (aInt ^ bInt&curry)
+		// curry = aInt&bInt | (aInt ^ bInt&curry)
+		curry = aInt&bInt | curry&(aInt^bInt)
+		retByte[i+1] = sum + '0'
 		i--
 		j--
 	}
@@ -86,6 +93,34 @@ func addBinary(a string, b string) string {
 		return string(retByte)
 	}
 	return string(retByte[1:])
+}
+
+// 网上例子
+func addBinary1(a string, b string) string {
+	if len(a) < len(b) {
+		a, b = b, a
+	}
+	ans := make([]byte, len(a)+1)
+	var carry byte
+	for i, j := len(a), len(b); i >= 1 || j >= 1; {
+		i, j = i-1, j-1
+		var a2Digit, b2Digit byte
+		if i >= 0 {
+			a2Digit = a[i] - '0'
+		}
+		if j >= 0 {
+			b2Digit = b[j] - '0'
+		}
+		// sum and carry of full adder
+		sum := a2Digit ^ b2Digit ^ carry
+		carry = a2Digit&b2Digit | carry&(a2Digit^b2Digit)
+		ans[i+1] = sum + '0'
+	}
+	if carry == 1 {
+		ans[0] = '1'
+		return string(ans)
+	}
+	return string(ans[1:])
 }
 
 // @lc code=end
