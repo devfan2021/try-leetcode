@@ -49,6 +49,33 @@
 
 // @lc code=start
 func isPalindrome(x int) bool {
+	return isPalindrome1(x)
+}
+
+// topest version
+func isPalindrome2(x int) bool {
+	if x < 0 {
+		return false
+	}
+
+	if x < 10 {
+		return true
+	}
+
+	res, xo := 0, x
+
+	// 反向相除，再累加，看是否等于开始值
+	for xo != 0 {
+		pop := xo % 10
+		xo /= 10
+		res = res*10 + pop
+	}
+
+	return res == x
+}
+
+// myself write version
+func isPalindrome1(x int) bool {
 	if x < 0 {
 		return false
 	} else if x < 10 {
@@ -63,7 +90,17 @@ func isPalindrome(x int) bool {
 		factor *= 10
 	}
 
-	for val >= 10 {
+	for val > 0 {
+		if val < factor {
+			for val > factor {
+				last := val % 10
+				if last != 0 {
+					return false
+				}
+				factor /= 10
+			}
+		}
+
 		last := val % 10
 		first := val / factor
 		if last != first {
@@ -71,11 +108,10 @@ func isPalindrome(x int) bool {
 		}
 		val = (val - first*factor) / 10
 		factor /= 10 * 10
+		if val < 0 {
+			return false
+		}
 	}
-	if factor > 10 && val != 0 {
-		return false
-	}
-
 	return true
 }
 
@@ -86,5 +122,6 @@ func isPalindrome(x int) bool {
 // fmt.Println(isPalindrome(1000021))
 // fmt.Println(isPalindrome(1001))
 // fmt.Println(isPalindrome(1000030001)) // 异常通不过
+// fmt.Println(isPalindrome(1000031111)) // 异常通不过
 
 // @lc code=end
