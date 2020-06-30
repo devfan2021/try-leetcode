@@ -1,3 +1,5 @@
+import "strings"
+
 /*
  * @lc app=leetcode id=28 lang=golang
  *
@@ -45,6 +47,40 @@
 // @lc code=start
 // 充分利用了slice的直接比较， 54行
 func strStr(haystack string, needle string) int {
+	return strStr3(haystack, needle)
+}
+
+// "mississippi" "a"
+func strStr3(haystack string, needle string) int {
+	if len(needle) == 0 {
+		return 0
+	}
+
+	if len(needle) > len(haystack) {
+		return -1
+	}
+
+	lenDiff := len(haystack) - len(needle)
+	for i := 0; i <= lenDiff; i++ {
+		flag := true
+		for j, k := i, 0; k < len(needle); j, k = j+1, k+1 {
+			if haystack[j] != needle[k] {
+				flag = false
+				break
+			}
+		}
+		if flag {
+			return i
+		}
+	}
+	return -1
+}
+
+func strStr2(haystack string, needle string) int {
+	return strings.Index(haystack, needle)
+}
+
+func strStr1(haystack string, needle string) int {
 	if len(needle) == 0 {
 		return 0
 	}
