@@ -59,6 +59,16 @@
 
 // @lc code=start
 func rotate(nums []int, k int) {
+	rotate2(nums, k)
+}
+
+func rotate2(nums []int, k int) {
+	if k != 0 {
+		copy(nums, append(nums[len(nums)-k%len(nums):], nums[0:len(nums)-k%len(nums)]...))
+	}
+}
+
+func rotate1(nums []int, k int) {
 	if k == 0 {
 		return
 	}
@@ -70,6 +80,8 @@ func rotate(nums []int, k int) {
 		k--
 	}
 }
+
+// [1,2,3,4,5,6,7]\n3
 
 // @lc code=end
 
