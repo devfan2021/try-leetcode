@@ -41,9 +41,50 @@ import "sort"
 //                          [[-3,-2,2,3],[-3,-1,1,3],[-3,0,0,3],           [-2,-1,0,3],            [-2,0,0,2],[-1,0,0,1]]
 // @lc code=start
 func fourSum(nums []int, target int) [][]int {
+	return fourSum1(nums, target)
+}
+
+// 优化点，某一位上重复值的处理
+func fourSum1(nums []int, target int) [][]int {
 	retVal := make([][]int, 0)
 	sort.Ints(nums)
-	for one := 0; one < len(nums); one++ {
+	for one := 0; one < len(nums)-3; one++ {
+		if one != 0 && nums[one] == nums[one-1] {
+			continue
+		}
+		for second := one + 1; second < len(nums)-2; second++ {
+			if second > one+1 && nums[second] == nums[second-1] {
+				continue
+			}
+			val := target - nums[one] - nums[second]
+			third := second + 1
+			four := len(nums) - 1
+			for third < four {
+				if nums[third]+nums[four] > val {
+					four--
+				} else if nums[third]+nums[four] < val {
+					third++
+				} else {
+					retVal = append(retVal, []int{nums[one], nums[second], nums[third], nums[four]})
+					third++
+					for third < four && nums[third] == nums[third-1] {
+						third++
+					}
+					// 加快第三层迭代
+					for third < four && nums[four] == nums[four-1] {
+						four--
+					}
+				}
+			}
+		}
+	}
+	return retVal
+}
+
+func fourSum2(nums []int, target int) [][]int {
+	retVal := make([][]int, 0)
+	sort.Ints(nums)
+	for one := 0; one < len(nums)-3; one++ {
 		if one != 0 && nums[one] == nums[one-1] {
 			continue
 		}
