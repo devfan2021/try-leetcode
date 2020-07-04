@@ -43,6 +43,11 @@ import "fmt"
 
 // @lc code=start
 func longestCommonPrefix(strs []string) string {
+
+}
+
+// not efficiency
+func longestCommonPrefix1(strs []string) string {
 	if len(strs) == 0 {
 		return ""
 	}
