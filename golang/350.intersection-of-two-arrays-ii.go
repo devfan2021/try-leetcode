@@ -55,7 +55,25 @@ import "sort"
 
 // @lc code=start
 func intersect(nums1 []int, nums2 []int) []int {
-	return intersect2(nums1, nums2)
+	return intersect3(nums1, nums2)
+}
+
+func intersect3(nums1 []int, nums2 []int) []int {
+	m1 := map[int]int{}
+	for _, num := range nums1 {
+		m1[num]++
+	}
+
+	res := []int{}
+	for _, num := range nums2 {
+		count, ok := m1[num]
+		if ok && count > 0 {
+			res = append(res, num)
+			m1[num]--
+		}
+	}
+
+	return res
 }
 
 func intersect2(nums1 []int, nums2 []int) []int {
