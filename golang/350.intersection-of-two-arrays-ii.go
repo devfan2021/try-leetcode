@@ -55,6 +55,35 @@ import "sort"
 
 // @lc code=start
 func intersect(nums1 []int, nums2 []int) []int {
+	return intersect2(nums1, nums2)
+}
+
+func intersect2(nums1 []int, nums2 []int) []int {
+	minList, maxList := nums1, nums2
+	if len(nums1) > len(nums2) {
+		minList, maxList = nums2, nums1
+	}
+
+	checkMap := map[int]int{}
+	for _, num := range minList {
+		checkMap[num]++
+	}
+
+	retVal := []int{}
+	for _, num := range maxList {
+		if val, ok := checkMap[num]; ok {
+			retVal = append(retVal, num)
+			if val > 1 {
+				checkMap[num] -= 1
+			} else {
+				delete(checkMap, num)
+			}
+		}
+	}
+	return retVal
+}
+
+func intersect1(nums1 []int, nums2 []int) []int {
 	sort.Ints(nums1)
 	sort.Ints(nums2)
 	retValues := make([]int, 0)
