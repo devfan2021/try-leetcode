@@ -43,7 +43,46 @@ import (
 
 // @lc code=start
 func groupAnagrams(strs []string) [][]string {
-	return groupAnagrams2(strs)
+	return groupAnagrams4(strs)
+}
+
+// 对第二种方法的精简写法
+func groupAnagrams4(strs []string) [][]string {
+	result := [][]string{}
+	hash := map[[26]uint8]int{}
+
+	for i := range strs {
+		rCount := [26]uint8{}
+		for j := range strs[i] {
+			rCount[uint8(strs[i][j]-'a')]++
+		}
+
+		if v, ok := hash[rCount]; ok {
+			result[v] = append(result[v], strs[i])
+		} else {
+			result = append(result, []string{strs[i]})
+			// 巧妙设置了， 直接用数组为key进行设置，有点想不到，简化流程
+			hash[rCount] = len(result) - 1
+		}
+	}
+	return result
+}
+
+// 精简写法, 充分利用nil空值特性
+func groupAnagrams3(strs []string) [][]string {
+	hash := make(map[string][]string, 0)
+	result := make([][]string, 0)
+	for _, val := range strs {
+		tmp := strings.Split(val, "")
+		sort.Strings(tmp)
+		sortStr := strings.Join(tmp, "")
+		hash[sortStr] = append(hash[sortStr], val)
+	}
+
+	for _, val := range hash {
+		result = append(result, val)
+	}
+	return result
 }
 
 // 先设置26位空间，用对应位字母减去'a'得到对应顺序位
