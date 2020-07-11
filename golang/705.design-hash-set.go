@@ -51,50 +51,43 @@
  *
 */
 
+// 1.使用最简单的方式，内部是一个[]int
+// 2.设计排序好的[]int ==>如果数据量大，每次都要进行排序，耗时
+// 3.设计一个hash方法
 // @lc code=start
 type MyHashSet struct {
-	data []int
+	D []int
 }
 
 /** Initialize your data structure here. */
 func Constructor() MyHashSet {
-	val := MyHashSet{}
-	return val
+	return MyHashSet{D: []int{-1, 0}}
+}
+
+func (this *MyHashSet) Hash(key int) int {
+	return key & (len(this.D) - 1)
 }
 
 func (this *MyHashSet) Add(key int) {
-	index := this.findByKey(key)
-	if index == -1 {
-		this.data = append(this.data, key)
+	k := this.Hash(key)
+	for this.D[k] != key && this.Hash(this.D[k]) == k {
+		this.D = append(this.D, this.D...)
+		k = this.Hash(key)
 	}
+	this.D[k] = key
 }
 
 func (this *MyHashSet) Remove(key int) {
-	index := this.findByKey(key)
-	if index != -1 {
-		length := len(this.data)
-		this.data[index] = this.data[length-1]
-		this.data[length-1] = 0
-		this.data = this.data[:length-1]
+	k := this.Hash(key)
+	if this.D[k] == key {
+		this.D[k] = k - 1
 	}
 }
 
 /** Returns true if this set contains the specified element */
 func (this *MyHashSet) Contains(key int) bool {
-	index := this.findByKey(key)
-	if index == -1 {
-		return false
-	}
-	return true
-}
-
-func (this *MyHashSet) findByKey(key int) int {
-	for index, v := range this.data {
-		if v == key {
-			return index
-		}
-	}
-	return -1
+	k := this.Hash(key)
+	return this.D[k] == key
 }
 
 /**
