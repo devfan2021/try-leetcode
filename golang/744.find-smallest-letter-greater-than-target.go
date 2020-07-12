@@ -67,7 +67,31 @@
  */
 
 // @lc code=start
+// 测试case: ["c","f","j"]\n"j"
 func nextGreatestLetter(letters []byte, target byte) byte {
+	return nextGreatestLetter2(letters, target)
+}
+
+// 采用Hash存储26个字母，再进行遍历比较
+func nextGreatestLetter2(letters []byte, target byte) byte {
+	hash := make(map[byte]bool, 26)
+	for _, v := range letters {
+		hash[v] = true
+	}
+
+	for {
+		target++
+		if target > 'z' {
+			target = 'a'
+		}
+		if _, ok := hash[target]; ok {
+			return byte(target)
+		}
+	}
+}
+
+// 采用二分查找的方式
+func nextGreatestLetter1(letters []byte, target byte) byte {
 	low, high := 0, len(letters)
 	for low < high {
 		mid := low + (high-low)/2
@@ -77,8 +101,7 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 			high = mid
 		}
 	}
-	return letters[low%len(letters)]
+	return letters[low%len(letters)] // 求余，循环回到第一个 ["c", "f", "j"]\n"c"
 }
 
 // @lc code=end
-
