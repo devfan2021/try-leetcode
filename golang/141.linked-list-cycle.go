@@ -81,16 +81,13 @@ func hasCycle(head *ListNode) bool {
 
 // 采用hash方式
 func hasCycle2(head *ListNode) bool {
-	if head == nil || head.Next == nil {
-		return false
-	}
-
 	hash := make(map[*ListNode]bool)
 	for head != nil {
 		if _, ok := hash[head]; ok {
 			return true
 		}
 		hash[head] = true
+		head = head.Next
 	}
 	return false
 }
