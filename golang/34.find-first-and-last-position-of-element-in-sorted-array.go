@@ -46,42 +46,36 @@
 
 // @lc code=start
 func searchRange(nums []int, target int) []int {
-	return searchRange1(nums, target)
+	return searchRange2(nums, target)
 }
 
+// 摘抄leetcode-cn上一位同学的例子
 func searchRange2(nums []int, target int) []int {
-	if len(nums) == 0 {
+	if len(nums) == 0 || (len(nums) == 1 && nums[0] != target) {
 		return []int{-1, -1}
 	}
 
-	low, high := 0, len(nums)-1
+	a := binarySearch(nums, target)
+	b := binarySearch(nums, target+1) // 巧用target+1的逻辑
+
+	if a == len(nums) || nums[a] != target { // 表明数组中不存在target
+		return []int{-1, -1}
+	}
+
+	return []int{a, b - 1} // 数组中存在target, b-1是最后一个target的元素索引
+}
+
+func binarySearch(nums []int, target int) int {
+	low, high := 0, len(nums)
 	for low < high {
-		if low+1 == high {
-			break
-		}
-
 		mid := low + (high-low)/2
-		if nums[mid] > target {
-			high = mid
-		} else if nums[mid] < target {
-			low = mid
+		if nums[mid] < target {
+			low = mid + 1
 		} else {
-			if nums[low] < nums[mid] {
-				low = low + 1
-			}
-			if nums[high] > nums[mid] {
-				high = high - 1
-			}
+			high = mid
 		}
 	}
-
-	if low == high && nums[low] != target {
-		return []int{-1, -1}
-	} else if low+1 == high && nums[low] != target {
-		return []int{-1, -1}
-	}
-
-	return []int{low, high}
+	return low
 }
 
 // 直接常规遍历查询O(n)时间复杂度

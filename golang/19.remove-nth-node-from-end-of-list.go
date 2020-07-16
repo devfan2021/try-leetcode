@@ -70,6 +70,7 @@ func removeNthFromEnd2(head *ListNode, n int) *ListNode {
 	return head
 }
 
+// 为啥要增加一个dummy节点呢？不可以直接操作吗？
 func removeNthFromEnd1(head *ListNode, n int) *ListNode {
 	if head == nil {
 		return nil
@@ -77,6 +78,7 @@ func removeNthFromEnd1(head *ListNode, n int) *ListNode {
 
 	dummy := &ListNode{Next: head}
 
+	// 先算总节点数
 	length := 0
 	first := head
 	for first != nil {
@@ -84,6 +86,7 @@ func removeNthFromEnd1(head *ListNode, n int) *ListNode {
 		first = first.Next
 	}
 
+	// 再操作需要移动的位置
 	first = dummy
 	length -= n
 	for length > 0 {

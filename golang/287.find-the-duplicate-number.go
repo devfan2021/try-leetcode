@@ -45,6 +45,7 @@ import "sort"
  */
 
 // @lc code=start
+// 官方的二分查找，位查找方法，快慢环的查找方式还没理解
 func findDuplicate(nums []int) int {
 	return findDuplicate2(nums)
 }

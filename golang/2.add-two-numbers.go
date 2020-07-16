@@ -39,8 +39,8 @@
  * }
  */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	carry, headerNode := 0, new(ListNode)
-	for node := headerNode; l1 != nil || l2 != nil || carry > 0; node = node.Next {
+	carry, dummy := 0, &ListNode{}
+	for node := dummy; l1 != nil || l2 != nil || carry > 0; node = node.Next {
 		if l1 != nil {
 			carry += l1.Val
 			l1 = l1.Next
@@ -52,8 +52,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		node.Next = &ListNode{carry % 10, nil}
 		carry = carry / 10
 	}
-	return headerNode.Next
+	return dummy.Next
 }
 
 // @lc code=end
-
