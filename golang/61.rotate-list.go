@@ -1,5 +1,3 @@
-import "fmt"
-
 /*
  * @lc app=leetcode id=61 lang=golang
  *
@@ -50,6 +48,10 @@ import "fmt"
  * }
  */
 func rotateRight(head *ListNode, k int) *ListNode {
+	return rotateRight2(head, k)
+}
+
+func rotateRight2(head *ListNode, k int) *ListNode {
 	if head == nil || k == 0 {
 		return head
 	}
@@ -57,7 +59,7 @@ func rotateRight(head *ListNode, k int) *ListNode {
 	low, fast := head, head
 	for i := 0; i < k; i++ {
 		if fast.Next == nil { // 巧妙求余，重新循环一次，链表的长度就是i+1 (不用计算链表的长度)
-			return rotateRight(head, k%(i+1))
+			return rotateRight2(head, k%(i+1))
 		}
 		fast = fast.Next
 	}
@@ -74,7 +76,7 @@ func rotateRight(head *ListNode, k int) *ListNode {
 }
 
 // 写的一直有bug, case验证不通过, 节点移位有问题
-func rotateRight2(head *ListNode, k int) *ListNode {
+func rotateRight1(head *ListNode, k int) *ListNode {
 	if head == nil || k == 0 {
 		return head
 	}
@@ -89,22 +91,26 @@ func rotateRight2(head *ListNode, k int) *ListNode {
 		return head
 	}
 
-	fmt.Println(count)
 	// 先走count步
 	low, fast := head, head
 	for ; count > 0; count-- {
 		fast = fast.Next
 	}
+
+	// 这种采用dummy节点的方式，就会出现类似这种case不能通过 [1,2]\n1  ===还是有问题，待进行解决处理
 	dummy := &ListNode{}
 	node := dummy
 	for fast.Next != nil {
+		node.Next = fast
+		node = node.Next
 		low, fast = low.Next, fast.Next
 	}
 
 	if fast.Next == nil {
-		node.Next = fast
+		node.Next = &ListNode{Val: fast.Val}
 		node = node.Next
 	}
+
 	low.Next = nil
 	node.Next = head
 	return dummy.Next
