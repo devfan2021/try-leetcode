@@ -123,7 +123,7 @@ func (this *MyLinkedList) AddAtHead(val int) {
 
 /** Append a node of value val to the last element of the linked list. */
 func (this *MyLinkedList) AddAtTail(val int) {
-	tmp := &Node{Val: val, Next: this.head.Next}
+	tmp := &Node{Val: val}
 	this.tail.Next = tmp
 	this.tail = tmp
 }
@@ -141,7 +141,7 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
 	if cur == nil {
 		return
 	}
-	tmp := &Node{Val: val}
+	tmp := &Node{Val: val, Next: cur.Next}
 	if this.tail == cur {
 		this.tail = tmp
 	}
