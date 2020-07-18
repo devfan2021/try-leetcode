@@ -48,9 +48,36 @@
  * }
  */
 func rotateRight(head *ListNode, k int) *ListNode {
-	return rotateRight2(head, k)
+	return rotateRight3(head, k)
 }
 
+// 巧用环的思路
+func rotateRight3(head *ListNode, k int) *ListNode {
+	if head == nil || head.Next == nil || k == 0 {
+		return head
+	}
+	count, cur := 1, head
+	for cur.Next != nil {
+		count, cur = count+1, cur.Next
+	}
+
+	// 链长的整数倍，直接返回
+	if k%count == 0 {
+		return head
+	}
+
+	//设置成环, 求余得最小移动步数
+	cur.Next = head
+	k %= count
+	for i := count - k; i > 0; i-- {
+		cur = cur.Next
+	}
+	head = cur.Next
+	cur.Next = nil
+	return head
+}
+
+// 采用快慢指针的方式
 func rotateRight2(head *ListNode, k int) *ListNode {
 	if head == nil || k == 0 {
 		return head
