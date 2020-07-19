@@ -49,24 +49,44 @@
  *
  */
 
+// 不通过的测试case: [1,3]\n2; [1]\n1
+
 // @lc code=start
 func searchInsert(nums []int, target int) int {
+	return searchInsert2(nums, target)
+}
+
+// use binary search, careful boundary, time space: O(log(n))
+func searchInsert2(nums []int, target int) int {
 	if len(nums) == 0 {
 		return 0
 	}
 	low, high := 0, len(nums)-1
-
-	for low < high {
+	for low <= high {
 		mid := low + (high-low)/2
 		if target == nums[mid] {
 			return mid
 		} else if target > nums[mid] {
-			low = mid
+			low = mid + 1
 		} else {
 			high = mid - 1
 		}
 	}
 	return low
+}
+
+// use for iterate, time space: O(n)
+func searchInsert1(nums []int, target int) int {
+	for i := 0; i < len(nums); i++ {
+		if target == nums[i] {
+			return i
+		}
+
+		if target < nums[i] {
+			return i
+		}
+	}
+	return len(nums)
 }
 
 // @lc code=end
