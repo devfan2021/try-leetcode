@@ -1,4 +1,7 @@
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 /*
  * @lc app=leetcode id=394 lang=golang
@@ -46,10 +49,68 @@ import "strconv"
 
 // @lc code=start
 func decodeString(s string) string {
-	return decodeString1(s)
+	return decodeString2(s)
 }
 
-// solution, help with stack
+// solution with recursion
+func decodeString2(s string) string {
+	res, _ := decodeStrByRecursion(s)
+	return res
+}
+
+func decodeStrByRecursion(s string) (string, int) {
+	var res string
+	count, k := 0, 0
+	for ; k < len(s); k++ {
+		v := s[k]
+		if isDigit(v) { // check digit
+			count = count*10 + int(v-'0') // handle example: 123ab
+		} else if v == '[' {
+			s2, index := decodeStrByRecursion(s[k+1:])
+			// res = res + strings.Repeat(s2, count)
+			for i := 0; i < count; i++ {
+				res += s2
+			}
+			count, k = 0, k+index+1
+		} else if v == ']' {
+			return res, k
+		} else {
+			res += string(v)
+		}
+	}
+	return res, 0
+}
+
+// solution with stack, sample, time complexity: O(n)
+func decodeString2(s string) string {
+	type pair struct {
+		count   int    // next string repeat times
+		lastStr string // last string
+	}
+
+	stack := []pair{}
+	var count int
+	var res string
+	for i := range s {
+		v := s[i]
+		if isDigit(v) { // check digit
+			count = count*10 + int(v-'0') // handle example: 123ab
+		} else if v == '[' { // save last data to stack
+			stack = append(stack, pair{count: count, lastStr: res})
+			count = 0
+			res = ""
+		} else if v == ']' { // handle stack data and stack pop: laststr + count * str
+			last := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+			res = last.lastStr + strings.Repeat(res, last.count)
+		} else { // string++
+			res += string(v)
+		}
+	}
+	return res
+}
+
+// solution with stack
 func decodeString1(s string) string {
 	if len(s) == 0 {
 		return s
