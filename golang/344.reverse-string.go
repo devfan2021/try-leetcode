@@ -46,6 +46,24 @@
 
 // @lc code=start
 func reverseString(s []byte) {
+	reverseString2(s)
+}
+
+// solution by recursive function：Time complexity: O(n), Space complexity: O(n)
+func reverseString2(s []byte) {
+	helper(s, 0, len(s)-1)
+}
+
+func helper(s []byte, start, end int) {
+	if start >= end {
+		return
+	}
+	s[start], s[end] = s[end], s[start]
+	helper(s, start+1, end-1)
+}
+
+// two pointers, Iteration, exchange first and last element: Time complexity: O(n), Space complexity: O(1)
+func reverseString1(s []byte) {
 	left, right := 0, len(s)-1
 	for left < right {
 		s[left], s[right] = s[right], s[left]
@@ -54,4 +72,3 @@ func reverseString(s []byte) {
 }
 
 // @lc code=end
-
