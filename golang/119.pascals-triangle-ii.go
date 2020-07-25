@@ -37,6 +37,28 @@
 
 // @lc code=start
 func getRow(rowIndex int) []int {
+	return getRow2(rowIndex)
+}
+
+// solution by recurisve
+func getRow2(rowIndex int) []int {
+	if rowIndex == 0 {
+		return []int{1}
+	} else if rowIndex == 1 {
+		return []int{1, 1}
+	} else {
+		preVals := getRow2(rowIndex - 1)
+		retVals := []int{1}
+		for i := 0; i < len(preVals)-1; i++ {
+			retVals = append(retVals, preVals[i]+preVals[i+1])
+		}
+		retVals = append(retVals, 1)
+		return retVals
+	}
+}
+
+// solution by iterate
+func getRow1(rowIndex int) []int {
 	if rowIndex == 0 {
 		return []int{1}
 	}
@@ -59,4 +81,3 @@ func getRow(rowIndex int) []int {
 }
 
 // @lc code=end
-
