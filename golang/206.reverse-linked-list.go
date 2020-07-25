@@ -41,20 +41,29 @@ func reverseList(head *ListNode) *ListNode {
 	return reverseList1(head)
 }
 
+// solution by recursive, Time complexity: O(n), Space complexity: O(n)
 func reverseList2(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	tmp := reverseList2(head.Next)
+	// confident
+	head.Next.Next = head
+	// avoid recycle link
+	head.Next = nil
+	return tmp
 }
 
+// solution by iterative, Time complexity: O(n), Space complexity: O(1)
 func reverseList1(head *ListNode) *ListNode {
 	var preNode *ListNode
 	curNode := head
 	for curNode != nil {
 		nextNode := curNode.Next
 		curNode.Next = preNode
-		preNode = curNode
-		curNode = nextNode
+		preNode, curNode = curNode, nextNode
 	}
 	return preNode
 }
 
 // @lc code=end
-
