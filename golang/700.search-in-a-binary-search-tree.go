@@ -57,7 +57,22 @@
  * }
  */
 func searchBST(root *TreeNode, val int) *TreeNode {
-	return searchBST2(root, val)
+	return searchBST3(root, val)
+}
+
+// solution by iterative, use BST characteristic, left node's value less than right node's value
+func searchBST3(root *TreeNode, val int) *TreeNode {
+	for root != nil {
+		if root.Val == val {
+			return root
+		}
+		if val < root.Val {
+			root = root.Left
+		} else {
+			root = root.Right
+		}
+	}
+	return nil
 }
 
 // solution by bfs
