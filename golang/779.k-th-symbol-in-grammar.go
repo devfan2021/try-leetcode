@@ -80,7 +80,7 @@ func kthGrammar2(N int, K int) int {
 	if N == 1 {
 		return 0
 	}
-	return 1 - kthGrammar2(N, (K+1)/2) ^ (K % 2)
+	return 1 - kthGrammar2(N-1, (K+1)/2) ^ (K % 2)
 }
 
 // solution by recursive, runtime error, out memory
