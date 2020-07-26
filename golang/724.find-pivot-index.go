@@ -57,6 +57,27 @@
 
 // @lc code=start
 func pivotIndex(nums []int) int {
+	return pivotIndex3(nums)
+}
+
+// solution by math sum, leftSum: leftSum = sum - leftSum - nums[i]
+func pivotIndex3(nums []int) int {
+	sum := 0
+	for _, v := range nums {
+		sum += v
+	}
+
+	leftSum := 0
+	for i := 0; i < len(nums); i++ {
+		if leftSum == sum-leftSum-nums[i] {
+			return i
+		}
+		leftSum += nums[i]
+	}
+	return -1
+}
+
+func pivotIndex2(nums []int) int {
 	if len(nums) <= 2 {
 		return -1
 	}
@@ -122,4 +143,3 @@ func pivotIndex1(nums []int) int {
 // [-1,-1,-1,0,1,1] --- 开头，结尾特殊案例
 // [-1,-1,1,1,0,0] --- 去除最后一个为零，但是中间有其他方案，优先返回其他方案
 // @lc code=end
-
