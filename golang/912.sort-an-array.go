@@ -37,7 +37,32 @@ import "sort"
 
 // @lc code=start
 func sortArray(nums []int) []int {
-	return sortArray1(nums)
+	return sortArrays3(nums)
+}
+
+// use quick sort
+func sortArrays3(nums []int) []int {
+	quickSort(nums, 0, len(nums)-1)
+	return nums
+}
+
+func quickSort(nums []int, low, high int) {
+	if low < high {
+		// compare value and find pivot index
+		index, pivot := low, nums[high]
+		for i := low; i < high; i++ {
+			if nums[i] < pivot {
+				nums[index], nums[i] = nums[i], nums[index]
+				index++
+			}
+		}
+		// pivot index
+		nums[index], nums[high] = nums[high], nums[index]
+
+		// do next quick sort
+		quickSort(nums, low, index-1)
+		quickSort(nums, index+1, high)
+	}
 }
 
 // use merge sort, from top voted solution, should review and study
