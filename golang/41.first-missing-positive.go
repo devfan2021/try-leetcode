@@ -47,7 +47,24 @@ import "sort"
 
 // @lc code=start
 func firstMissingPositive(nums []int) int {
-	return firstMissingPositive1(nums)
+	return firstMissingPositive2(nums)
+}
+
+// using hash to check missing positive, time complexity: O(n), space complexity: O(n)
+func firstMissingPositive2(nums []int) int {
+	hash := map[int]bool{}
+	for _, v := range nums {
+		if v > 0 {
+			hash[v] = true
+		}
+	}
+
+	for i := 1; i <= len(hash)+1; i++ {
+		if !hash[i] {
+			return i
+		}
+	}
+	return 0
 }
 
 //[], [0,2,2,1,1]
