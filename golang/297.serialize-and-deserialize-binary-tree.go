@@ -62,60 +62,46 @@ import (
  */
 
 type Codec struct {
+	separator string
+	emptyStr  string
 }
 
 func Constructor() Codec {
-	return Codec{}
+	return Codec{separator: ",", emptyStr: "null"}
 }
 
 // Serializes a tree to a single string.
 func (this *Codec) serialize(root *TreeNode) string {
 	if root == nil {
-		return "null,"
+		return this.emptyStr + this.separator
 	}
 	left := this.serialize(root.Left)
 	right := this.serialize(root.Right)
 
-	return strconv.Itoa(root.Val) + "," + left + right
+	return strconv.Itoa(root.Val) + this.separator + left + right
 }
 
 // Deserializes your encoded data to tree.
 func (this *Codec) deserialize(data string) *TreeNode {
-	items := strings.Split(data, ",")
-	return helperDeserialize(&items)
+	items := strings.Split(data, this.separator)
+	return this.helperDeserialize(&items)
 }
 
-func helperDeserialize(nodes *[]string) *TreeNode {
+func (this *Codec) helperDeserialize(nodes *[]string) *TreeNode {
 	if len(*nodes) == 0 {
 		return nil
 	}
-	top := (*nodes)[0]
-	if top == "null" {
+	nodeVal := (*nodes)[0]
+	*nodes = (*nodes)[1:]
+	if nodeVal == this.emptyStr {
 		return nil
 	}
 
-	*nodes = (*nodes)[1:]
-	tmp, _ := strconv.Atoi(top)
-	curNode := &TreeNode{Val: tmp}
-	curNode.Left = helperDeserialize(nodes)
-	curNode.Right = helperDeserialize(nodes)
-	return curNode
-
-	// nodeVal := "null"
-	// if len(*nodes) > 0 {
-	// 	nodeVal = (*nodes)[0]
-	// 	*nodes = (*nodes)[1:]
-	// }
-	// if nodeVal == "null" {
-	// 	return nil
-	// }
-	// val, _ := strconv.Atoi(nodeVal)
-	// root := TreeNode{Val: val}
-	// root.Left = helperDeserialize(nodes)
-	// root.Right = helperDeserialize(nodes)
-
-	// return &root
-
+	val, _ := strconv.Atoi(nodeVal)
+	curNode := TreeNode{Val: val}
+	curNode.Left = this.helperDeserialize(nodes)
+	curNode.Right = this.helperDeserialize(nodes)
+	return &curNode
 }
 
 /**
