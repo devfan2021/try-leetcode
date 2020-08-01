@@ -24,17 +24,65 @@
  *
  *
  */
-
+// 10000
 // @lc code=start
 func countPrimes(n int) int {
+	return countPrimes2(n)
+}
+
+func countPrimes2(n int) int {
+	if n < 2 {
+		return 0
+	}
+
+	// line array overmatch map
+	// hash := make(map[int]bool, n)
+	hash := make([]bool, n)
+	for i := 2; i < n; i++ {
+		hash[i] = true
+	}
+
+	for i := 2; i*i < n; i++ {
+		if hash[i] {
+			for j := 2 * i; j < n; j += i {
+				hash[j] = false
+			}
+		}
+	}
+
 	count := 0
 	for i := 2; i < n; i++ {
-		if (i != 2 && i%2 == 0) || (i != 3 && i%3 == 0) || (i != 5 && i%5 == 0) || (i != 7 && i%7 == 0) {
-			continue
+		if hash[i] {
+			count++
 		}
-		count++
+	}
+
+	return count
+}
+
+// time limit exceeded: 499979
+func countPrimes1(n int) int {
+	hash := map[int]bool{}
+	for i := 2; i < n; i++ {
+		hash[i] = true
+	}
+
+	count := 0
+	for i := 2; i < n; i++ {
+		if isPrime1(i) {
+			count++
+		}
 	}
 	return count
+}
+
+func isPrime1(n int) bool {
+	for i := 2; i < n; i++ {
+		if n%i == 0 {
+			return false
+		}
+	}
+	return true
 }
 
 // @lc code=end

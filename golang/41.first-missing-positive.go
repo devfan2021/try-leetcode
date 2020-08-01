@@ -59,12 +59,12 @@ func firstMissingPositive2(nums []int) int {
 		}
 	}
 
-	for i := 1; i <= len(hash)+1; i++ {
+	for i := 1; i <= len(hash); i++ {
 		if !hash[i] {
 			return i
 		}
 	}
-	return 0
+	return len(hash) + 1
 }
 
 //[], [0,2,2,1,1]
