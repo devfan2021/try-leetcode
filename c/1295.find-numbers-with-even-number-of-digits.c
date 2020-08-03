@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode id=1295 lang=golang
+ * @lc app=leetcode id=1295 lang=c
  *
  * [1295] Find Numbers with Even Number of Digits
  *
