@@ -31,6 +31,13 @@ import "sort"
  * 1,1,5 → 1,5,1
  *
  */
+// test case
+// tmp := []int{1, 2, 3}
+// tmp := []int{3, 2, 1}
+// tmp := []int{1, 1, 5}
+// tmp := []int{2, 3, 1} // [3,1,2]
+// tmp := []int{1, 3, 2} // [2,1,3]
+// tmp := []int{1, 5, 1} // [5,1,1]
 
 // @lc code=start
 func nextPermutation(nums []int) {
@@ -51,18 +58,21 @@ func nextPermutation(nums []int) {
 	}
 
 	if exist {
-		swapIndex := cmpIndex + 1
+		swapIndex := -1
 		for i := cmpIndex + 1; i <= len(nums)-2; i++ {
-			if nums[i] > nums[cmpIndex] && nums[cmpIndex] > nums[i+1] {
+			if nums[i] > nums[cmpIndex] && nums[cmpIndex] >= nums[i+1] {
 				swapIndex = i
 				break
 			}
+		}
+		if swapIndex == -1 {
+			swapIndex = len(nums) - 1
 		}
 
 		// swap two valus
 		nums[cmpIndex], nums[swapIndex] = nums[swapIndex], nums[cmpIndex]
 
-		// revrese last elements
+		// revrese last next elements
 		for i := cmpIndex + 1; i < len(nums); i++ {
 			tmp := nums[len(nums)-1]
 			for j := len(nums) - 1; j > i; j-- {
