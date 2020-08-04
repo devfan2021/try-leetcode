@@ -41,6 +41,34 @@ import "sort"
 
 // @lc code=start
 func nextPermutation(nums []int) {
+	nextPermutation2(nums)
+}
+
+// [1,2], [2,1,3]
+func nextPermutation2(nums []int) {
+	cmpIndex := len(nums) - 2
+	for ; cmpIndex >= 0 && nums[cmpIndex] >= nums[cmpIndex+1]; cmpIndex-- {
+	}
+
+	if cmpIndex >= 0 {
+		min := cmpIndex + 1
+		for i := cmpIndex + 2; i < len(nums); i++ {
+			if nums[cmpIndex] < nums[i] && nums[i] <= nums[min] {
+				min = i
+			}
+		}
+		nums[cmpIndex], nums[min] = nums[min], nums[cmpIndex]
+	}
+	reverse(nums[cmpIndex+1:])
+}
+
+func reverse(nums []int) {
+	for i, j := 0, len(nums)-1; i < j; i, j = i+1, j-1 {
+		nums[i], nums[j] = nums[j], nums[i]
+	}
+}
+
+func nextPermutation1(nums []int) {
 	if len(nums) <= 1 {
 		return
 	}
