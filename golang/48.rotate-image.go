@@ -68,8 +68,20 @@ func rotate(matrix [][]int) {
 	rotate2(matrix)
 }
 
+// 矩阵运算逻辑
+// https://blog.csdn.net/happyaaaaaaaaaaa/article/details/51563752
+// time complexity:O(n*n), time complexity:O(1)
 func rotate2(matrix [][]int) {
-
+	n := len(matrix)
+	for i := 0; i < (n+1)/2; i++ {
+		for j := 0; j < n/2; j++ {
+			tmp := matrix[i][j]
+			matrix[i][j] = matrix[n-j-1][i]
+			matrix[n-j-1][i] = matrix[n-i-1][n-j-1]
+			matrix[n-i-1][n-j-1] = matrix[j][n-i-1]
+			matrix[j][n-i-1] = tmp
+		}
+	}
 }
 
 //transpose matrix + reverse each row: time complexity:O(n*n), time complexity:O(1)
