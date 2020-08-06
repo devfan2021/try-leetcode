@@ -38,7 +38,43 @@
 
 // @lc code=start
 func minimumTotal(triangle [][]int) int {
-	return minimumTotal2(triangle)
+	return minimumTotal4(triangle)
+}
+
+// bottom to top, similary method3, but reduce space
+func minimumTotal4(triangle [][]int) int {
+	rows := len(triangle)
+	dp := make([]int, rows+1)
+
+	// for last row to calculate
+	for i := rows - 1; i >= 0; i-- {
+		for j := 0; j <= i; j++ {
+			dp[j] = triangle[i][j] + min(dp[j], dp[j+1])
+		}
+	}
+	return dp[0]
+}
+
+// bottom to top
+func minimumTotal3(triangle [][]int) int {
+	rows := len(triangle)
+	dp := make([][]int, rows)
+	for i := 0; i < rows; i++ {
+		dp[i] = make([]int, i+1)
+	}
+
+	// set last row value
+	for i := 0; i < rows; i++ {
+		dp[rows-1][i] = triangle[rows-1][i]
+	}
+
+	// for last row to calculate
+	for i := rows - 2; i >= 0; i-- {
+		for j := 0; j <= i; j++ {
+			dp[i][j] = triangle[i][j] + min(dp[i+1][j], dp[i+1][j+1])
+		}
+	}
+	return dp[0][0]
 }
 
 type point struct {
