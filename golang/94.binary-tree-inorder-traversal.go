@@ -47,8 +47,10 @@ func inorderTraversal(root *TreeNode) []int {
 // using stack, time complexity:O(n), space complexity:O(n)
 func inorderTraversal2(root *TreeNode) []int {
 	retVal, stack := []int{}, []*TreeNode{}
+	// don't add root node to stack, only assign root node to curr
 	curr := root
 	for curr != nil || len(stack) != 0 {
+		// add left child node to the end of stack
 		for curr != nil {
 			stack = append(stack, curr)
 			curr = curr.Left
