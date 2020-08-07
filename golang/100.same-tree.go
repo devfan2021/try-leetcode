@@ -71,6 +71,7 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
 	return isSameTree2(p, q)
 }
 
+// iteration, time complexity: O(n), space complexity: O(log(N))
 func isSameTree2(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
@@ -109,6 +110,7 @@ func isSameTree2(p *TreeNode, q *TreeNode) bool {
 	return true
 }
 
+// recursion, time complexity: O(n), space complexity: O(log(N))
 func checkTreeNode(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
