@@ -50,12 +50,23 @@ func readBinaryWatch1(num int) []string {
 	retVals := []string{}
 	for h := 0; h < 12; h++ {
 		for m := 0; m < 60; m++ {
-			if helper(h)+helper(m) == num {
+			if countingBit(h)+countingBit(m) == num {
 				retVals = append(retVals, fmt.Sprintf("%d:%02d", h, m))
 			}
 		}
 	}
 	return retVals
+}
+
+func countingBit(num int) int {
+	res := 0
+	for i := 0; i < 6; i++ {
+		if num&1 == 1 {
+			res++
+		}
+		num >>= 1
+	}
+	return res
 }
 
 func helper(num int) int {
