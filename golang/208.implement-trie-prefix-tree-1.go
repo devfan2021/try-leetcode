@@ -83,7 +83,7 @@ func (this *Trie) StartsWith(prefix string) bool {
 	parent := this
 	for _, c := range prefix {
 		cInt := int(c - 'a')
-		if parent.Children[cInt] != nil {
+		if parent.Children[cInt] == nil {
 			return false
 		}
 		parent = parent.Children[cInt]
