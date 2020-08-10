@@ -1,4 +1,7 @@
-import "strings"
+import (
+	"sort"
+	"strings"
+)
 
 /*
  * @lc app=leetcode id=648 lang=golang
@@ -51,11 +54,34 @@ import "strings"
 
 // @lc code=start
 func replaceWords(dict []string, sentence string) string {
-	return replaceWords2(dict, sentence)
+	return replaceWords3(dict, sentence)
+}
+
+func replaceWords3(dict []string, sentence string) string {
+	sort.Strings(dict)
+
+	words := strings.Split(sentence, " ")
+	var res strings.Builder
+	for i := 0; i < len(words); i++ {
+		res.WriteString(helper(dict, words[i]))
+		if i != len(words)-1 {
+			res.WriteString(" ")
+		}
+	}
+	return res.String()
+}
+
+func helper(dist []string, s string) string {
+	for i := 0; i < len(dist); i++ {
+		if strings.HasPrefix(s, dist[i]) {
+			return dist[i]
+		}
+	}
+	return s
 }
 
 // using map, strings.Split, strings.Join
-func replaceWords1(dict []string, sentence string) string {
+func replaceWords2(dict []string, sentence string) string {
 	if len(sentence) == 0 {
 		return ""
 	}
@@ -130,7 +156,7 @@ func (this *Trie) StartsWith(prefix string) bool {
 }
 
 // trie: find the smallest root that was a prefix in linear time.
-func replaceWords2(dict []string, sentence string) string {
+func replaceWords1(dict []string, sentence string) string {
 	if len(sentence) == 0 {
 		return ""
 	}
