@@ -49,18 +49,41 @@
 
 // @lc code=start
 func tribonacci(n int) int {
-	return tribonacci3(n)
+	return tribonacci4(n)
 }
 
-// cursive, time limit exceeded
-func tribonacci1(n int) int {
+// dynamic program, using three element to store cache data
+func tribonacci4(n int) int {
 	if n == 0 {
 		return 0
 	} else if n == 1 || n == 2 {
 		return 1
 	}
 
-	return tribonacci1(n-1) + tribonacci1(n-2) + tribonacci1(n-3)
+	dp0, dp1, dp2, dpn := 0, 1, 1, 0
+	for i := 3; i <= n; i++ {
+		dpn = dp0 + dp1 + dp2
+		dp0, dp1, dp2 = dp1, dp2, dpn
+	}
+	return dpn
+}
+
+// dynamic program, using array, n+1 size
+func tribonacci3(n int) int {
+	if n == 0 {
+		return 0
+	} else if n == 1 || n == 2 {
+		return 1
+	}
+
+	dp := map[int]int{}
+	dp[0] = 0
+	dp[1] = 1
+	dp[2] = 1
+	for i := 3; i <= n; i++ {
+		dp[i] = dp[i-3] + dp[i-2] + dp[i-1]
+	}
+	return dp[n]
 }
 
 // recusive with memory
@@ -87,22 +110,15 @@ func helper(n int, hash map[int]int) int {
 	return sum
 }
 
-// dynamic program
-func tribonacci3(n int) int {
+// cursive, time limit exceeded
+func tribonacci1(n int) int {
 	if n == 0 {
 		return 0
 	} else if n == 1 || n == 2 {
 		return 1
 	}
 
-	dp := map[int]int{}
-	dp[0] = 0
-	dp[1] = 1
-	dp[2] = 1
-	for i := 3; i <= n; i++ {
-		dp[i] = dp[i-3] + dp[i-2] + dp[i-1]
-	}
-	return dp[n]
+	return tribonacci1(n-1) + tribonacci1(n-2) + tribonacci1(n-3)
 }
 
 // @lc code=end
