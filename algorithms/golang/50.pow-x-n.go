@@ -51,7 +51,28 @@ import "math"
 // @lc code=start
 
 func myPow(x float64, n int) float64 {
-	return myPow1(x, n)
+	return myPow3(x, n)
+}
+
+// iterative, solution like myPow1
+func myPow3(x float64, n int) float64 {
+	if n == 0 {
+		return 1
+	}
+	if n < 0 {
+		n = -n
+		x = 1 / x
+	}
+
+	retVal := 1.0
+	for n > 0 {
+		if n&1 == 1 {
+			retVal *= x
+		}
+		x *= x
+		n >>= 1
+	}
+	return retVal
 }
 
 // solution by recursive with memorization
