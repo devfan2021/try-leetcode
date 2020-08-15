@@ -59,6 +59,16 @@ func convertToTitle(n int) string {
 func convertToTitle1(n int) string {
 	retVal := ""
 	for n > 0 {
+		retVal = string('A'+(n-1)%26) + retVal
+		n = (n - 1) / 26
+	}
+	return retVal
+
+}
+
+func convertToTitle1(n int) string {
+	retVal := ""
+	for n > 0 {
 		n = n - 1 // key point
 		x := 65 + n%26
 		retVal = string(x) + retVal
