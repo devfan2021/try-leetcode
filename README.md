@@ -31,6 +31,13 @@ LeetCode
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang](./algorithms/golang/1137.n-th-tribonacci-number.go)                                                                                              |
 
 
+### LeetCode Database
+
+| #   | Title                                                                   | Difficulty | Solution                                       |
+| --- | ----------------------------------------------------------------------- | ---------- | ---------------------------------------------- |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy       | [MySQL](./database/175.combine-two-tables.sql) |
+
+
 reference:  
 
 [haoel-leetcode](https://github.com/haoel/leetcode)  
