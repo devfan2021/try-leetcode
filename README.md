@@ -42,6 +42,7 @@ LeetCode
 | 180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/description/)                                               | Medium     | [MySQL](./database/180.consecutive-numbers.sql)                         |
 | 181 | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/) | Easy       | [MySQL] (./database/181.employees-earning-more-than-their-managers.sql) |
 | 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)                                                     | Easy       | [MySQL](./database/182.duplicate-emails.sql)                            |
+| 183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                               | Easy       | [MySQL](./database/183.customers-who-never-order.sql)                   |
 
 reference:  
 
