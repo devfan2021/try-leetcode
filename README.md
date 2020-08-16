@@ -44,6 +44,7 @@ LeetCode
 | 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)                                                     | Easy       | [MySQL](./database/182.duplicate-emails.sql)                           |
 | 183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                               | Easy       | [MySQL](./database/183.customers-who-never-order.sql)                  |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/)                                       | Easy       | [MySQL](./database/196.delete-duplicate-emails.sql)                    |
+| 192 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                             | Easy       | [MySQL](./database/197.rising-temperature.sql)                         |
 
 reference:  
 
