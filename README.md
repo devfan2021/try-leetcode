@@ -35,11 +35,11 @@ LeetCode
 
 ### LeetCode Database
 
-| #   | Title                                                                                     | Difficulty | Solution                                          |
-| --- | ----------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------- |
-| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                   | Easy       | [MySQL](./database/175.combine-two-tables.sql)    |
-| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/) | Easy       | [MySQL](./database/176.second-highest-salary.sql) |
-
+| #   | Title                                                                                                                               | Difficulty | Solution                                                                |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------- |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                             | Easy       | [MySQL](./database/175.combine-two-tables.sql)                          |
+| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/)                                           | Easy       | [MySQL](./database/176.second-highest-salary.sql)                       |
+| 181 | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/) | Easy       | [MySQL] (./database/181.employees-earning-more-than-their-managers.sql) |
 
 reference:  
 
