@@ -63,6 +63,7 @@ func reverseBits(num uint32) uint32 {
 	return reverseBits1(num)
 }
 
+// Bit by Bit, time complexity:O(1), space complexity:O(1)
 func reverseBits1(num uint32) uint32 {
 	ret, power := uint32(0), uint32(31)
 	for num != 0 {
