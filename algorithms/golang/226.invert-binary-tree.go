@@ -53,6 +53,32 @@
  * }
  */
 func invertTree(root *TreeNode) *TreeNode {
+	return invertTree2(root)
+}
+
+// iterative
+func invertTree2(root *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
+
+	stack := []*TreeNode{root}
+	for len(stack) > 0 {
+		curNode := stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+		curNode.Left, curNode.Right = curNode.Right, curNode.Left
+		if curNode.Left != nil {
+			stack = append(stack, curNode.Left)
+		}
+		if curNode.Right != nil {
+			stack = append(stack, curNode.Right)
+		}
+	}
+	return root
+}
+
+// recursive
+func invertTree1(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
 	}
