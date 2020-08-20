@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode id=485 lang=golang
+ * @lc app=leetcode id=485 lang=c
  *
  * [485] Max Consecutive Ones
  *
@@ -35,44 +35,26 @@
  */
 
 // @lc code=start
-func findMaxConsecutiveOnes(nums []int) int {
-	return findMaxConsecutiveOnes3(nums)
-}
-
-func findMaxConsecutiveOnes2(nums []int) int {
-	maxCount, currentCount := 0, 0
-
-	for _, num := range nums {
-		if num == 1 {
-			currentCount++
-		} else {
-			currentCount = 0
+int findMaxConsecutiveOnes(int *nums, int numsSize)
+{
+	int max_count = 0, cur_count = 0;
+	for (int i = 0; i < numsSize; i++)
+	{
+		if (nums[i] == 1)
+		{
+			cur_count++;
+		}
+		else
+		{
+			cur_count = 0;
 		}
 
-		if currentCount > maxCount {
-			maxCount = currentCount
+		if (cur_count > max_count)
+		{
+			max_count = cur_count;
 		}
 	}
-
-	return maxCount
-}
-
-func findMaxConsecutiveOnes1(nums []int) int {
-	firstLen, secondLen := 0, 0
-	for _, item := range nums {
-		if item == 1 {
-			secondLen++
-		} else {
-			if secondLen > firstLen {
-				firstLen = secondLen
-			}
-			secondLen = 0
-		}
-	}
-	if secondLen > firstLen {
-		return secondLen
-	}
-	return firstLen
+	return max_count;
 }
 
 // @lc code=end
