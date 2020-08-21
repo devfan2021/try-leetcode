@@ -33,6 +33,7 @@
 | 485  | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)                                                     | Easy       | Array                                            | [golang][leetcode-485-golang], [c][leetcode-485-c]   |
 | 496  | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)                                                 | Easy       | Stack                                            | [golang][leetcode-496-golang]                        |
 | 530  | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)                                     | Easy       | Tree                                             | [golang][leetcode-530-golang]                        |
+| 532  | [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/)                                             | Easy       | Array, Two Pointers                              | [golang][leetcode-532-golang]                        |
 | 687  | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/description/)                                                   | Easy       | Tree, Recursion                                  | [golang][leetcode-687-golang]                        |
 | 783  | [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)                         | Easy       | Tree, Recursion                                  | [golang][leetcode-783-golang]                        |
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang][leetcode-1137-golang]                       |
@@ -89,6 +90,7 @@ reference:
 [leetcode-485-golang]: ./algorithms/golang/485.max-consecutive-ones.go
 [leetcode-496-golang]: ./algorithms/golang/496.next-greater-element-i.go
 [leetcode-530-golang]: ./algorithms/golang/530.minimum-absolute-difference-in-bst.go
+[leetcode-532-golang]: ./algorithms/golang/532.k-diff-pairs-in-an-array.go
 [leetcode-687-golang]: ./algorithms/golang/687.longest-univalue-path.go
 [leetcode-783-golang]: ./algorithms/golang/783.minimum-distance-between-bst-nodes.go
 [leetcode-1137-golang]: ./algorithms/golang/1137.n-th-tribonacci-number.go
