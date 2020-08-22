@@ -36,7 +36,7 @@
 
 // @lc code=start
 func findMaxConsecutiveOnes(nums []int) int {
-	return findMaxConsecutiveOnes3(nums)
+	return findMaxConsecutiveOnes2(nums)
 }
 
 func findMaxConsecutiveOnes2(nums []int) int {
