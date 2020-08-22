@@ -1,3 +1,5 @@
+import "sort"
+
 /*
  * @lc app=leetcode id=532 lang=golang
  *
@@ -59,7 +61,58 @@
 
 // @lc code=start
 func findPairs(nums []int, k int) int {
-	return findPairs1(nums, k)
+	return findPairs3(nums, k)
+}
+
+func findPairs3(nums []int, k int) int {
+	if k < 0 || len(nums) <= 1 {
+		return 0
+	}
+
+	sort.Ints(nums)
+	retVal := 0
+	for begin, end := 0, 1; end < len(nums); {
+		if begin >= end || nums[begin]+k > nums[end] {
+			end++
+		} else if begin > 0 && nums[begin] == nums[begin-1] || nums[begin]+k < nums[end] {
+			// begin
+			//  |
+			// [1, 1, ...., 8, 8]
+			//              |
+			//             end
+			begin++
+		} else {
+			begin++
+			retVal++
+		}
+	}
+	return retVal
+}
+
+// [1,2,3,4,5], -1
+func findPairs2(nums []int, k int) int {
+	if k < 0 || len(nums) <= 1 {
+		return 0
+	}
+
+	hash := map[int]int{}
+	for _, v := range nums {
+		hash[v]++
+	}
+
+	retVal := 0
+	for hKey, hValue := range hash { // iterator hash
+		if k == 0 {
+			if hValue >= 2 {
+				retVal++
+			}
+		} else {
+			if hash[hKey+k] > 0 {
+				retVal++
+			}
+		}
+	}
+	return retVal
 }
 
 func findPairs1(nums []int, k int) int {
