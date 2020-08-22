@@ -89,8 +89,10 @@ int main()
   int a[] = {7, 1, 5, 3, 6, 4};
   printf("%d\n", maxProfit(a, (int)(sizeof(a) / sizeof(a[0]))));
   printf("%d\n", maxProfit2(a, (int)(sizeof(a) / sizeof(a[0]))));
+  printf("%d\n", maxProfit3(a, (int)(sizeof(a) / sizeof(a[0]))));
 
   int b[] = {7, 6, 4, 3, 1};
   printf("%d\n", maxProfit(b, (int)(sizeof(b) / sizeof(b[0]))));
   printf("%d\n", maxProfit2(b, (int)(sizeof(b) / sizeof(b[0]))));
+  printf("%d\n", maxProfit3(a, (int)(sizeof(a) / sizeof(a[0]))));
 }
