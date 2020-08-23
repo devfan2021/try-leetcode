@@ -10,7 +10,7 @@ int add(int a, int b)
   do
   {
     sum = a ^ b;
-    carry = (a & b) << 1;
+    carry = ((unsigned int)(a & b) << 1);
 
     a = sum;
     b = carry;
