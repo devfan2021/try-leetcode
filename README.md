@@ -10,6 +10,7 @@
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)                                                               | Medium     | Linked List, Math                                | [golang][leetcode-2-golang]                          |
 | 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium     | Hash Table, Two Pointers, String, Sliding Window | [golang][leetcode-3-golang], [c][leetcode-3-c]       |
 | 4    | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                       | Hard       | Array, Binary Search, Divide and Conquer         | [golang][leetcode-4-golang]                          |
+| 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)                                   | Medium     | String, Dynamic Programming                      | [golang][leetcode-5-golang]                          |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
 | 50   | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/)                                                                              | Medium     | Math, Binary Search                              | [golang][leetcode-50-golang]                         |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
@@ -68,6 +69,7 @@ reference:
 [leetcode-2-golang]: ./algorithms/golang/2.add-two-numbers.go
 [leetcode-3-golang]: ./algorithms/golang/3.longest-substring-without-repeating-characters.go
 [leetcode-4-golang]: ./algorithms/golang/4.median-of-two-sorted-arrays.go
+[leetcode-5-golang]: ./algorithms/golang/5.longest-palindromic-substring.go
 [leetcode-13-golang]: ./algorithms/golang/13.roman-to-integer.go
 [leetcode-50-golang]: ./algorithms/golang/50.pow-x-n.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go

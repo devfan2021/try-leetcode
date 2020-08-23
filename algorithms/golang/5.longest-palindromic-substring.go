@@ -35,21 +35,71 @@
 
 // @lc code=start
 func longestPalindrome(s string) string {
-	return longestPalindrome1(s)
+	return longestPalindrome2(s)
 }
 
 // dp:  p(i, j) = p(i+1, j-1) ^ (Si = Sj)
-func longestPalindrome1(s string) string {
-	retVals, length, dp := "", len(s), make([][]int, n)
-	for i := 0; i < n; i++ {
-		dp[i] = make([]int, n)
+func longestPalindrome2(s string) string {
+	length := len(s)
+	if length < 2 {
+		return s
 	}
 
-	for i := 0; i < len(s); i++ {
-		for j := i; j < len(s); j++ {
+	maxLen, begin, dp := 1, 0, make([][]bool, length)
+	for i := 0; i < length; i++ {
+		dp[i] = make([]bool, length)
+		dp[i][i] = true
+	}
 
+	for j := 1; j < len(s); j++ {
+		for i := 0; i < j; i++ {
+			if s[i] != s[j] {
+				dp[i][j] = false
+			} else {
+				if j-i < 3 {
+					dp[i][j] = true
+				} else {
+					dp[i][j] = dp[i+1][j-1]
+				}
+			}
+
+			if dp[i][j] && j-i+1 > maxLen {
+				maxLen = j - i + 1
+				begin = i
+			}
 		}
 	}
+	return s[begin : begin+maxLen]
+}
+
+// brute force, time complexity:O(n^3)
+func longestPalindrome1(s string) string {
+	length := len(s)
+	if length < 2 {
+		return s
+	}
+
+	begin, maxLength := 0, 1
+	for i := 0; i < length; i++ {
+		for j := i + 1; j < length; j++ {
+			if j-i+1 > maxLength && validPalindromic(s, i, j) {
+				maxLength = j - i + 1
+				begin = i
+			}
+		}
+	}
+	return s[begin : begin+maxLength]
+}
+
+func validPalindromic(s string, begin, end int) bool {
+	for begin < end {
+		if s[begin] != s[end] {
+			return false
+		}
+		begin++
+		end--
+	}
+	return true
 }
 
 // @lc code=end
