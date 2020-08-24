@@ -1,6 +1,6 @@
 # LeetCode
 
-### LeetCode Algorithm
+## LeetCode Algorithm
 
 (Notes: "&hearts;" means you need to buy a book from Leetcode)
 
@@ -41,7 +41,7 @@
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang][leetcode-1137-golang]                       |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/)               | Easy       | Array                                            | [golang][leetcode-1295-golang], [c][leetcode-1295-c] |
 
-### LeetCode Database
+## LeetCode Database
 
 | #   | Title                                                                                                                               | Difficulty | Solution                                                               |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------- |
@@ -57,7 +57,7 @@
 | 192 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                             | Easy       | [MySQL](./database/197.rising-temperature.sql)                         |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/)                                       | Easy       | [MySQL](./database/196.delete-duplicate-emails.sql)                    |
 
-#### offer problems
+## Offer Problems
 
 | #           | Title                                                                                                       | Difficulty | Solution                                          |
 | ----------- | ----------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------- |
@@ -72,9 +72,8 @@
 | offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)             | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)              |
 | offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                           | Easy       | [c](./lcof/offer-66-ConstuctArray.c)              |
 
-
-
 reference:
+
 [haoel-leetcode](https://github.com/haoel/leetcode)  
 [LeetCode](https://leetcode.com/)  
 [lintcode](https://www.lintcode.com/)
