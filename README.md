@@ -26,6 +26,7 @@
 | 198  | [House Robber](https://leetcode.com/problems/house-robber/description/)                                                                     | Easy       | Dynamic Programming                              | [golang][leetcode-198-golang]                        |
 | 199  | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                       | Medium     | Tree, Depth-first-Search, Breadth-first-Search   | [golang][leetcode-199-golang]                        |
 | 226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)                                                         | Easy       | Tree                                             | [golang][leetcode-226-golang]                        |
+| 257  | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)                                                           | Easy       | Tree, Depth-first-Search                         | [golang][leetcode-257-golang]                        |
 | 258  | [Add Digits](https://leetcode.com/problems/add-digits/description/)                                                                         | Easy       | Math                                             | [golang][leetcode-258-golang]                        |
 | 263  | [Ugly Number](https://leetcode.com/problems/ugly-number/description/)                                                                       | Easy       | Math                                             | [golang][leetcode-263-golang]                        |
 | 292  | [Nim Game](https://leetcode.com/problems/nim-game/)                                                                                         | Easy       | Brainteaser, Minimax                             | [golang][leetcode-292-golang]                        |
@@ -100,6 +101,7 @@ reference:
 [leetcode-198-golang]: ./algorithms/golang/198.house-robber.go
 [leetcode-199-golang]: ./algorithms/golang/199.binary-tree-right-side-view.go
 [leetcode-226-golang]: ./algorithms/golang/226.invert-binary-tree.go
+[leetcode-257-golang]: ./algorithms/golang/257.binary-tree-paths.go
 [leetcode-258-golang]: ./algorithms/golang/258.add-digits.go
 [leetcode-263-golang]: ./algorithms/golang/263.ugly-number.go
 [leetcode-292-golang]: ./algorithms/golang/292.nim-game.go
