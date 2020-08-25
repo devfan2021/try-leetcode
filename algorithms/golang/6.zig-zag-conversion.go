@@ -1,3 +1,7 @@
+import (
+	"strings"
+)
+
 /*
  * @lc app=leetcode id=6 lang=golang
  *
@@ -54,7 +58,65 @@
 
 // @lc code=start
 func convert(s string, numRows int) string {
+	return convert1(s, numRows)
+}
 
+// line 0: indexK = 2 * numRows -2
+// numRows -1, indexK = k(2*numRows-2) + numRows -1
+// line i: k, 2 * numRows -2 + i  or  (k+1)(2*numRows-2)
+func convert2(s string, numRows int) string {
+	if len(s) <= numRows || numRows == 1 {
+		return s
+	}
+	period := 2*numRows - 2
+	res := make([]string, numRows)
+
+	for i, v := range s {
+		mod := i % period
+		// fmt.Printf("i: %d, mod: %d, period: %d\n",i, mod, period)
+		if mod < numRows {
+			res[mod] += string(v)
+		} else {
+			res[period-mod] += string(v)
+		}
+	}
+	return strings.Join(res, "")
+}
+
+func convert1(s string, numRows int) string {
+	if len(s) == 0 || numRows == 0 || numRows == 1 {
+		return s
+	}
+
+	rows := min(len(s), numRows)
+	retVals := make([]string, rows)
+
+	curRow, goingDown := 0, false
+	for i := range s {
+		retVals[curRow] += string(s[i : i+1])
+		if curRow == 0 || curRow == rows-1 {
+			goingDown = !goingDown
+		}
+
+		if goingDown {
+			curRow++
+		} else {
+			curRow--
+		}
+	}
+
+	vals := ""
+	for _, val := range retVals {
+		vals += val
+	}
+	return vals
+}
+
+func min(val1, val2 int) int {
+	if val1 < val2 {
+		return val1
+	}
+	return val2
 }
 
 // @lc code=end
