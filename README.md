@@ -12,6 +12,8 @@
 | 4    | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                       | Hard       | Array, Binary Search, Divide and Conquer         | [golang][leetcode-4-golang]                          |
 | 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)                                   | Medium     | String, Dynamic Programming                      | [golang][leetcode-5-golang]                          |
 | 6    | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)                                                           | Medium     | String                                           | [golang][leetcode-6-golang]                          |
+| 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                           | Easy       | Math                                             | [golang][leetcode-7-golang]                          |
+| 8    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)                                               | Medium     | Math, String                                     | [golang][leetcode-8-golang]                          |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
 | 50   | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/)                                                                              | Medium     | Math, Binary Search                              | [golang][leetcode-50-golang]                         |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
@@ -88,6 +90,8 @@ reference:
 [leetcode-4-golang]: ./algorithms/golang/4.median-of-two-sorted-arrays.go
 [leetcode-5-golang]: ./algorithms/golang/5.longest-palindromic-substring.go
 [leetcode-6-golang]: ./algorithms/golang/6.zig-zag-conversion.go
+[leetcode-7-golang]: ./algorithms/golang/7.reverse-integer.go
+[leetcode-8-golang]: ./algorithms/golang/8.string-to-integer-atoi.go
 [leetcode-13-golang]: ./algorithms/golang/13.roman-to-integer.go
 [leetcode-50-golang]: ./algorithms/golang/50.pow-x-n.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go

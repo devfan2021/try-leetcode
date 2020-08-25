@@ -88,7 +88,41 @@
 
 // @lc code=start
 func myAtoi(str string) int {
+	if len(str) == 0 {
+		return 0
+	}
 
+	index := 0
+	for index < len(str) {
+		if str[index] == ' ' {
+			index++
+		} else {
+			break
+		}
+	}
+
+	sign := 1
+	if index < len(str) && (str[index] == '-' || str[index] == '+') {
+		if str[index] == '-' {
+			sign = -1
+		}
+		index++
+	}
+
+	// Build the result and check for overflow/underflow condition
+	minVal, maxVal, result := -2^31, 2^31-1, 0
+	for index < len(str) && str[index] >= '0' && str[index] <= '9' {
+		if result > maxVal/10 || result == maxVal/10 && int(str[index]-'0') > maxVal%10 {
+			if sign == 1 {
+				return maxVal
+			} else {
+				return minVal
+			}
+		}
+		result = result*10 + int(str[index]-'0')
+		index++
+	}
+	return result * sign
 }
 
 // @lc code=end
