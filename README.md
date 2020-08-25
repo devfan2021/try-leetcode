@@ -63,24 +63,26 @@
 
 ## Offer Problems
 
-| #           | Title                                                                                                       | Difficulty | Solution                                          |
-| ----------- | ----------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------- |
-| offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)              | Easy       | [c](./lcof/offer-3-01-DuplicationInArray.c)       |
-| offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)               |
-| offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                  | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)           |
-| offer-53-03 | Integer Identical To Index                                                                                  | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c) |
-| offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                        | Easy       | [c](./lcof/offer-61-ContinousCards.c)             |
-| offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)         |
-| offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                           | Medium     | [c](./lcof/offer-63-MaximalProfit.c)              |
-| offer-64    | [Accumulate](https://leetcode-cn.com/problems/qiu-12n-lcof/)                                                | Medium     | [c](./lcof/offer-64-Accumulate.c)                 |
-| offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)             | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)              |
-| offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                           | Easy       | [c](./lcof/offer-66-ConstuctArray.c)              |
+| #           | Title                                                                                                       | Difficulty | Solution                                           |
+| ----------- | ----------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------- |
+| offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)              | Easy       | [c](./lcof/offer-03-01-DuplicationInArray.c)       |
+| offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)   | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
+| offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
+| offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                  | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
+| offer-53-03 | Integer Identical To Index                                                                                  | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                        | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
+| offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
+| offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                           | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
+| offer-64    | [Accumulate](https://leetcode-cn.com/problems/qiu-12n-lcof/)                                                | Medium     | [c](./lcof/offer-64-Accumulate.c)                  |
+| offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)             | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)               |
+| offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                           | Easy       | [c](./lcof/offer-66-ConstuctArray.c)               |
 
 reference:
 
 [haoel-leetcode](https://github.com/haoel/leetcode)  
 [LeetCode](https://leetcode.com/)  
 [lintcode](https://www.lintcode.com/)
+[minunit](https://github.com/siu/minunit)
 
 <!-- golang 题解源文件-->
 
