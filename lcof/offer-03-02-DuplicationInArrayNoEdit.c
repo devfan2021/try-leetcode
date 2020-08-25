@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "minunit.h"
 
+int countRange(int *nums, int numsSize, int begin, int end);
+
 // question similar offer-03-01, don't modify input array
 int getDuplication(int *nums, int numsSize)
 {
@@ -24,24 +26,6 @@ int getDuplication(int *nums, int numsSize)
   }
 
   return -1;
-}
-
-int countRange(int *nums, int numsSize, int begin, int end)
-{
-  if (nums == NULL || numsSize == 0)
-  {
-    return 0;
-  }
-
-  int count = 0;
-  for (int i = 0; i < numsSize; i++)
-  {
-    if (nums[i] >= begin && nums[i] <= end)
-    {
-      count++;
-    }
-  }
-  return count;
 }
 
 // binary search
@@ -82,11 +66,29 @@ int getDuplication1(int *nums, int numsSize)
   return -1;
 }
 
+int countRange(int *nums, int numsSize, int begin, int end)
+{
+  if (nums == NULL || numsSize == 0)
+  {
+    return 0;
+  }
+
+  int count = 0;
+  for (int i = 0; i < numsSize; i++)
+  {
+    if (nums[i] >= begin && nums[i] <= end)
+    {
+      count++;
+    }
+  }
+  return count;
+}
+
 MU_TEST(test_case)
 {
   int a[] = {2, 3, 5, 4, 3, 2, 6, 7};
   mu_assert_int_eq(3, getDuplication(a, (int)sizeof(a) / sizeof(a[0])));
-  mu_assert_int_eq(2, getDuplication1(a, (int)sizeof(a) / sizeof(a[0])));
+  mu_assert_int_eq(3, getDuplication1(a, (int)sizeof(a) / sizeof(a[0])));
 }
 
 MU_TEST_SUITE(test_suite)
