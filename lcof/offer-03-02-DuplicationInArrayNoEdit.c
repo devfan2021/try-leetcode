@@ -56,7 +56,7 @@ int getDuplication1(int *nums, int numsSize)
   while (begin <= end)
   {
     int mid = begin + (end - begin) / 2;
-    int count = countRange(nums, numsSize, begin, end);
+    int count = countRange(nums, numsSize, begin, mid);
     if (end == begin)
     {
       if (count > 1)
