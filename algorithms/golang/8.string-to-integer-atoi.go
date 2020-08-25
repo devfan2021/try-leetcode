@@ -88,6 +88,49 @@
 
 // @lc code=start
 func myAtoi(str string) int {
+	return myAtoi2(str)
+}
+
+func myAtoi2(str string) int {
+	if len(str) == 0 {
+		return 0
+	}
+
+	idx, sign := 0, 1
+	for idx < len(str) && str[idx] == ' ' {
+		idx++
+	}
+
+	if idx < len(str) && (str[idx] == '-' || str[idx] == '+') {
+		if str[idx] == '-' {
+			sign = -1
+		}
+		idx++
+	}
+
+	result := 0
+	for idx < len(str) && isNumerical(str[idx]) {
+		n := int(str[idx] - '0')
+
+		if sign == 1 && result > (2147483647-n)/10 {
+			return 2147483647
+		}
+
+		if sign == -1 && -result < (-2147483648+n)/10 {
+			return -2147483648
+		}
+
+		result = result*10 + n
+		idx++
+	}
+	return result * sign
+}
+
+func isNumerical(b byte) bool {
+	return b >= '0' && b <= '9'
+}
+
+func myAtoi1(str string) int {
 	if len(str) == 0 {
 		return 0
 	}
@@ -110,7 +153,7 @@ func myAtoi(str string) int {
 	}
 
 	// Build the result and check for overflow/underflow condition
-	minVal, maxVal, result := -2^31, 2^31-1, 0
+	minVal, maxVal, result := -1<<31, 1<<31-1, 0
 	for index < len(str) && str[index] >= '0' && str[index] <= '9' {
 		if result > maxVal/10 || result == maxVal/10 && int(str[index]-'0') > maxVal%10 {
 			if sign == 1 {
