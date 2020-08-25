@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "minunit.h"
 
 int cmp(const void *_a, const void *_b)
 {
@@ -26,7 +27,7 @@ int findRepeatNumber1(int *nums, int numsSize)
 {
   for (int i = 0; i < numsSize; i++)
   {
-    if (i != nums[i])
+    while (i != nums[i])
     {
       if (nums[i] == nums[nums[i]])
       {
@@ -60,17 +61,27 @@ int findRepeatNumber2(int *nums, int numsSize)
   return -1;
 }
 
-int main()
+MU_TEST(test_check)
 {
   int a[] = {1, 2, 3, 4, 2};
-  printf("%d", findRepeatNumber(a, (int)(sizeof(a) / sizeof(a[0]))));
-  printf("%d", findRepeatNumber1(a, (int)(sizeof(a) / sizeof(a[0]))));
-  printf("%d", findRepeatNumber2(a, (int)(sizeof(a) / sizeof(a[0]))));
+  mu_assert_int_eq(2, findRepeatNumber(a, (int)(sizeof(a) / sizeof(a[0]))));
+  mu_assert_int_eq(2, findRepeatNumber1(a, (int)(sizeof(a) / sizeof(a[0]))));
+  mu_assert_int_eq(2, findRepeatNumber2(a, (int)(sizeof(a) / sizeof(a[0]))));
 
   int b[] = {1, 2, 3, 4, 6, 3};
-  printf("%d", findRepeatNumber(b, (int)(sizeof(b) / sizeof(b[0]))));
-  printf("%d", findRepeatNumber1(b, (int)(sizeof(b) / sizeof(b[0]))));
-  printf("%d", findRepeatNumber2(a, (int)(sizeof(a) / sizeof(a[0]))));
+  mu_assert_int_eq(3, findRepeatNumber(b, (int)(sizeof(b) / sizeof(b[0]))));
+  mu_assert_int_eq(3, findRepeatNumber1(b, (int)(sizeof(b) / sizeof(b[0]))));
+  mu_assert_int_eq(3, findRepeatNumber2(b, (int)(sizeof(b) / sizeof(b[0]))));
+}
 
-  return 0;
+MU_TEST_SUITE(test_suite)
+{
+  MU_RUN_TEST(test_check);
+}
+
+int main()
+{
+  MU_RUN_SUITE(test_suite);
+  MU_REPORT();
+  return MU_EXIT_CODE;
 }
