@@ -119,6 +119,8 @@ func convert1(s string, numRows int) string {
 		vals += val
 	}
 	return vals
+
+	// return strings.Join(retVals, "")
 }
 
 func min(val1, val2 int) int {
