@@ -68,6 +68,7 @@
 | offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)              | Easy       | [c](./lcof/offer-03-01-DuplicationInArray.c)       |
 | offer-03-02 | Duplication In Array No Edit                                                                                | Easy       | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
 | offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)   | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
+| offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                       | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
 | offer-10-01 | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                    | Easy       | [c](./lcof/offer-10-01-Fibonacci.c)                |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                  | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
