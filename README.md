@@ -71,6 +71,7 @@
 | offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                       | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
 | offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                    | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
 | offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
+| offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                    | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                  | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
 | offer-53-03 | Integer Identical To Index                                                                                  | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
