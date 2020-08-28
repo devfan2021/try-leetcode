@@ -85,9 +85,12 @@ func backtrack(output *[][]int, candidates, track []int, target, start int) {
 	}
 
 	for i := start; i < len(candidates); i++ {
-		track = append(track, candidates[i])
-		backtrack(output, candidates, track, target-candidates[i], i)
-		track = track[:len(track)-1]
+		remain := target - candidates[i]
+		if remain >= 0 {
+			track = append(track, candidates[i])
+			backtrack(output, candidates, track, remain, i)
+			track = track[:len(track)-1]
+		}
 	}
 }
 

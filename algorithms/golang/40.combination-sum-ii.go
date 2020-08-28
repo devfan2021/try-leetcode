@@ -73,7 +73,7 @@ func dfs(res *[][]int, candidates, cur []int, index, target int) {
 		*res = append(*res, append([]int{}, cur...))
 	} else {
 		for i := index; i < len(candidates); i++ {
-			if i == index || candidates[i] != candidates[i-1] {
+			if i == index || candidates[i] != candidates[i-1] { // don't add duplicate element
 				dfs(res, candidates, append(cur, candidates[i]), i+1, target-candidates[i])
 			}
 		}
