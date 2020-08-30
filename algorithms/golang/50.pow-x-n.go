@@ -49,9 +49,8 @@ import "math"
  */
 
 // @lc code=start
-
 func myPow(x float64, n int) float64 {
-	return myPow3(x, n)
+	return myPow1(x, n)
 }
 
 // iterative, solution like myPow1
@@ -111,10 +110,10 @@ func myPow1(x float64, n int) float64 {
 		return x
 	}
 	if n < 0 {
-		return 1 / myPow(x, -n)
+		return 1 / myPow1(x, -n)
 	}
 
-	return myPow(x*x, int(n/2)) * myPow(x, int(n%2))
+	return myPow1(x*x, int(n/2)) * myPow1(x, int(n%2))
 }
 
 // @lc code=end
