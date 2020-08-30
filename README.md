@@ -16,6 +16,7 @@
 | 8    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)                                               | Medium     | Math, String                                     | [golang][leetcode-8-golang]                          |
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-12-golang]                         |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
+| 17   | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                   | Medium     | String, Backtracking                             | [golang][leetcode-17-golang]                         |
 | 39   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | Medium     | Array, Backtracking                              | [golang][leetcode-39-golang]                         |
 | 40   | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)                                                         | Medium     | Array, Backtracking                              | [golang][leetcode-40-golang]                         |
 | 46   | [Permutations](https://leetcode.com/problems/permutations/description/)                                                                     | Medium     | Backtracking                                     | [golang][leetcode-46-golang]                         |
@@ -107,6 +108,7 @@ reference:
 [leetcode-8-golang]: ./algorithms/golang/8.string-to-integer-atoi.go
 [leetcode-12-golang]: ./algorithms/golang/12.integer-to-roman.go
 [leetcode-13-golang]: ./algorithms/golang/13.roman-to-integer.go
+[leetcode-17-golang]: ./algorithms/golang/17.letter-combinations-of-a-phone-number.go
 [leetcode-39-golang]: ./algorithms/golang/39.combination-sum.go
 [leetcode-40-golang]: ./algorithms/golang/40.combination-sum-ii.go
 [leetcode-46-golang]: ./algorithms/golang/46.permutations.go
