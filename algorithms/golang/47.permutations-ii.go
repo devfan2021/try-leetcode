@@ -39,12 +39,12 @@ func permuteUnique(nums []int) [][]int {
 
 func permuteUnique1(nums []int) [][]int {
 	sort.Ints(nums)
-	output, track := [][]int{}, []int{}
-	backtrack(&output, nums, track, 0)
+	output, track, visit := [][]int{}, []int{}, make([]bool, len(nums))
+	backtrack(&output, nums, track, visit, 0)
 	return output
 }
 
-func backtrack(output *[][]int, nums, track []int, index int) {
+func backtrack(output *[][]int, nums, track []int, visited []bool, index int) {
 	if len(track) == len(nums) {
 		path := make([]int, len(nums))
 		copy(path, track)
@@ -53,12 +53,24 @@ func backtrack(output *[][]int, nums, track []int, index int) {
 	}
 
 	for i := 0; i < len(nums); i++ {
-		if i == index {
+		if visited[i] {
 			continue
 		}
+
+		// https://leetcode.com/problems/permutations-ii/discuss/18594/Really-easy-Java-solution-much-easier-than-the-solutions-with-very-high-vote
+		// With inputs as [1a, 1b, 2a],
+		/// If we don't handle the duplicates, the results would be: [1a, 1b, 2a], [1b, 1a, 2a]...,
+		// so we must make sure 1a goes before 1b to avoid duplicates
+		// By using nums[i-1]==nums[i] && !used[i-1], we can make sure that 1b cannot be choosed before 1a
+		if i > 0 && nums[i-1] == nums[i] && !visited[i-1] {
+			continue
+		}
+
 		track = append(track, nums[i])
-		backtrack(output, nums, track, index+1)
+		visited[i] = true
+		backtrack(output, nums, track, visited, index+1)
 		track = track[:len(track)-1]
+		visited[i] = false
 	}
 }
 
