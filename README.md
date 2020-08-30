@@ -72,10 +72,12 @@
 | #           | Title                                                                                                       | Difficulty | Solution                                           |
 | ----------- | ----------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------- |
 | offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)              | Easy       | [c](./lcof/offer-03-01-DuplicationInArray.c)       |
-| offer-03-02 | Duplication In Array No Edit                                                                                | Easy       | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
+| offer-03-02 | Duplication In Array No Edit                                                                                |            | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
 | offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)   | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
 | offer-05    | [Replace Spaces](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)                                    | Easy       | [c](./lcof/offer-05-ReplaceSpaces.c)               |
 | offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                       | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
+| offer-08    | Next Node In Binary Tree                                                                                    |            | [c](./lcof/offer-08-NextNodeInBinaryTrees.c)       |
+| offer-09    | [Queue With Two Stacks](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)         | Easy       | [c](./lcof/offer-09-QueueWithTwoStacks.c)          |
 | offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                    | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
 | offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
 | offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                    | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
@@ -83,7 +85,7 @@
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                  | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
-| offer-53-03 | Integer Identical To Index                                                                                  | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-53-03 | Integer Identical To Index                                                                                  |            | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
 | offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                        | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
 | offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
 | offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                           | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
