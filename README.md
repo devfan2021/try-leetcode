@@ -40,6 +40,7 @@
 | 263  | [Ugly Number](https://leetcode.com/problems/ugly-number/description/)                                                                       | Easy       | Math                                             | [golang][leetcode-263-golang]                        |
 | 292  | [Nim Game](https://leetcode.com/problems/nim-game/)                                                                                         | Easy       | Brainteaser, Minimax                             | [golang][leetcode-292-golang]                        |
 | 299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/)                                                                 | Easy       | Hsh Table                                        | [golang][leetcode-299-golang]                        |
+| 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/)                                                                   | Medium     | Math, Dynamic Programming                        | [golang][leetcode-343-golang], [c][leetcode-343-c]   |
 | 389  | [Find the Difference](https://leetcode.com/problems/find-the-difference/description/)                                                       | Easy       | Hash Table, Bit Manipulation                     | [golang][leetcode-389-golang]                        |
 | 485  | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)                                                     | Easy       | Array                                            | [golang][leetcode-485-golang], [c][leetcode-485-c]   |
 | 496  | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)                                                 | Easy       | Stack                                            | [golang][leetcode-496-golang]                        |
@@ -81,6 +82,7 @@
 | offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                    | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
 | offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
 | offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                    | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
+| offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                      | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                | Medium     | [c](./lcof/offer-16-Power.c)                       |
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
@@ -136,6 +138,7 @@ reference:
 [leetcode-263-golang]: ./algorithms/golang/263.ugly-number.go
 [leetcode-292-golang]: ./algorithms/golang/292.nim-game.go
 [leetcode-299-golang]: ./algorithms/golang/299.bulls-and-cows.go
+[leetcode-343-golang]: ./algorithms/golang/343.integer-break.go
 [leetcode-389-golang]: ./algorithms/golang/389.find-the-difference.go
 [leetcode-485-golang]: ./algorithms/golang/485.max-consecutive-ones.go
 [leetcode-496-golang]: ./algorithms/golang/496.next-greater-element-i.go
@@ -150,5 +153,6 @@ reference:
 <!-- C 题解源文件-->
 
 [leetcode-3-c]: ./algorithms/c/3.longest-substring-without-repeating-characters.c
+[leetcode-343-c]: ./algorithms/c/343.integer-break.c
 [leetcode-485-c]: ./algorithms/c/485.max-consecutive-ones.c
 [leetcode-1295-c]: ./algorithms/c/1295.find-numbers-with-even-number-of-digits.c
