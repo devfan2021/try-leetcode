@@ -82,6 +82,7 @@
 | offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                    | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
 | offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
 | offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                    | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
+| offer-13    | [Robot Move](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)                          | Medium     | [c](./lcof/offer-13-RobotMove.c)                   |
 | offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                      | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
 | offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                  | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                | Medium     | [c](./lcof/offer-16-Power.c)                       |
