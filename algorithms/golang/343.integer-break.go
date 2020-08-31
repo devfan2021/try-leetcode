@@ -40,7 +40,24 @@
 
 // @lc code=start
 func integerBreak(n int) int {
-	return integerBreak2(n)
+	return integerBreak4(n)
+}
+
+// math, greedy, may big data overflow
+func integerBreak4(n int) int {
+	if n == 0 {
+		return 0
+	}
+	if n <= 3 {
+		return n - 1
+	}
+
+	retVal := 1
+	for n > 4 {
+		retVal *= 3
+		n -= 3
+	}
+	return retVal * n
 }
 
 // greedy: if n>=5, more cut 3, if n == 4,  2*2 > 1*3

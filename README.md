@@ -83,6 +83,7 @@
 | offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
 | offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                    | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
 | offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                      | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
+| offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                  | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                | Medium     | [c](./lcof/offer-16-Power.c)                       |
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)               | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
