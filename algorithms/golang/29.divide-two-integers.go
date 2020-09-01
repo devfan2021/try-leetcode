@@ -53,7 +53,53 @@
 
 // @lc code=start
 func divide(dividend int, divisor int) int {
-	return divide1(dividend, divisor)
+	return divide2(dividend, divisor)
+}
+
+// test case: 1\n-1
+func divide2(dividend int, divisor int) int {
+	minInt32, maxInt32 := -1<<31, 1<<31-1
+	if dividend == 0 {
+		return 0
+	}
+	if divisor == 1 {
+		return dividend
+	}
+	if dividend == minInt32 && divisor == -1 {
+		return maxInt32
+	}
+
+	isPostive := true
+	if dividend < 0 {
+		dividend = -dividend
+		isPostive = !isPostive
+	}
+	if divisor < 0 {
+		divisor = -divisor
+		isPostive = !isPostive
+	}
+
+	// divide some part to approach the answer
+	quotient := div(dividend, divisor)
+	if !isPostive {
+		return -quotient
+	}
+
+	return quotient
+}
+
+// similar binary search
+func div(val1 int, val2 int) int {
+	if val1 < val2 {
+		return 0
+	}
+
+	count, divisor := 1, val2
+	for (divisor + divisor) < val1 {
+		count += count     // double
+		divisor += divisor // double
+	}
+	return count + div(val1-divisor, val2)
 }
 
 // test case: 1\n-1
