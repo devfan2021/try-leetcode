@@ -17,7 +17,8 @@
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-12-golang]                         |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
 | 17   | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                   | Medium     | String, Backtracking                             | [golang][leetcode-17-golang]                         |
-| 39   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | Medium     | Array, Backtracking                              | [golang][leetcode-39-golang]                         |
+| 29   | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)                                                       | Medium     | Math, Binary Search                              | [golang][leetcode-17-golang]                         |
+| 39   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | Medium     | Array, Backtracking                              | [golang][leetcode-29-golang]                         |
 | 40   | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)                                                         | Medium     | Array, Backtracking                              | [golang][leetcode-40-golang]                         |
 | 46   | [Permutations](https://leetcode.com/problems/permutations/description/)                                                                     | Medium     | Backtracking                                     | [golang][leetcode-46-golang]                         |
 | 47   | [Permutations II](https://leetcode.com/problems/permutations-ii/description/)                                                               | Medium     | Backtracking                                     | [golang][leetcode-47-golang]                         |
@@ -117,6 +118,7 @@ reference:
 [leetcode-12-golang]: ./algorithms/golang/12.integer-to-roman.go
 [leetcode-13-golang]: ./algorithms/golang/13.roman-to-integer.go
 [leetcode-17-golang]: ./algorithms/golang/17.letter-combinations-of-a-phone-number.go
+[leetcode-29-golang]: ./algorithms/golang/29.divide-two-integers.go
 [leetcode-39-golang]: ./algorithms/golang/39.combination-sum.go
 [leetcode-40-golang]: ./algorithms/golang/40.combination-sum-ii.go
 [leetcode-46-golang]: ./algorithms/golang/46.permutations.go
