@@ -17,12 +17,15 @@
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-12-golang]                         |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
 | 17   | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                   | Medium     | String, Backtracking                             | [golang][leetcode-17-golang]                         |
-| 29   | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)                                                       | Medium     | Math, Binary Search                              | [golang][leetcode-17-golang]                         |
-| 39   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | Medium     | Array, Backtracking                              | [golang][leetcode-29-golang]                         |
+| 29   | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)                                                       | Medium     | Math, Binary Search                              | [golang][leetcode-29-golang]                         |
+| 39   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | Medium     | Array, Backtracking                              | [golang][leetcode-39-golang]                         |
 | 40   | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)                                                         | Medium     | Array, Backtracking                              | [golang][leetcode-40-golang]                         |
+| 43   | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-43-golang]                         |
+| 45   | [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/)                                                                     | Hard       | Array, Greedy                                    | [golang][leetcode-45-golang]                         |
 | 46   | [Permutations](https://leetcode.com/problems/permutations/description/)                                                                     | Medium     | Backtracking                                     | [golang][leetcode-46-golang]                         |
 | 47   | [Permutations II](https://leetcode.com/problems/permutations-ii/description/)                                                               | Medium     | Backtracking                                     | [golang][leetcode-47-golang]                         |
 | 50   | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/)                                                                              | Medium     | Math, Binary Search                              | [golang][leetcode-50-golang]                         |
+| 55   | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                                                           | Medium     | Array, Greedy                                    | [golang][leetcode-55-golang]                         |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                                                     | Easy       | Tree, Depth-first Search                         | [golang][leetcode-110-golang]                        |
 | 111  | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)                                     | Easy       | Tree, Depth-first Search,Breadth-first Search    | [golang][leetcode-111-golang]                        |
@@ -121,9 +124,12 @@ reference:
 [leetcode-29-golang]: ./algorithms/golang/29.divide-two-integers.go
 [leetcode-39-golang]: ./algorithms/golang/39.combination-sum.go
 [leetcode-40-golang]: ./algorithms/golang/40.combination-sum-ii.go
+[leetcode-43-golang]: ./algorithms/golang/43.multiply-strings.go
+[leetcode-45-golang]: ./algorithms/golang/45.jump-game-ii.go
 [leetcode-46-golang]: ./algorithms/golang/46.permutations.go
 [leetcode-47-golang]: ./algorithms/golang/47.permutations-ii.go
 [leetcode-50-golang]: ./algorithms/golang/50.pow-x-n.go
+[leetcode-55-golang]: ./algorithms/golang/55.jump-game.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go
 [leetcode-110-golang]: ./algorithms/golang/110.balanced-binary-tree.go
 [leetcode-111-golang]: ./algorithms/golang/111.minimum-depth-of-binary-tree.go
