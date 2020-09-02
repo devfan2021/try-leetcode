@@ -25,6 +25,7 @@
 | 46   | [Permutations](https://leetcode.com/problems/permutations/description/)                                                                     | Medium     | Backtracking                                     | [golang][leetcode-46-golang]                         |
 | 47   | [Permutations II](https://leetcode.com/problems/permutations-ii/description/)                                                               | Medium     | Backtracking                                     | [golang][leetcode-47-golang]                         |
 | 50   | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/)                                                                              | Medium     | Math, Binary Search                              | [golang][leetcode-50-golang]                         |
+| 54   | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)                                                                   | Medium     | Array                                            | [golang][leetcode-54-golang]                         |
 | 55   | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                                                           | Medium     | Array, Greedy                                    | [golang][leetcode-55-golang]                         |
 | 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                                                                 | Easy       | Tree, Depth-first Search,Breadth-first Search    | [golang][leetcode-101-golang]                        |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
@@ -135,6 +136,7 @@ reference:
 [leetcode-46-golang]: ./algorithms/golang/46.permutations.go
 [leetcode-47-golang]: ./algorithms/golang/47.permutations-ii.go
 [leetcode-50-golang]: ./algorithms/golang/50.pow-x-n.go
+[leetcode-54-golang]: ./algorithms/golang/54.spiral-matrix.go
 [leetcode-55-golang]: ./algorithms/golang/55.jump-game.go
 [leetcode-101-golang]: ./algorithms/golang/101.symmetric-tree.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go

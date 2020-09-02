@@ -41,8 +41,64 @@
  */
 
 // @lc code=start
-// 直接参考最佳答案，解题思路可以参考下
 func spiralOrder(matrix [][]int) []int {
+	return spiralOrder2(matrix)
+}
+
+func spiralOrder2(matrix [][]int) []int {
+	if nil == matrix || len(matrix) == 0 {
+		return []int{}
+	}
+
+	row, col := len(matrix), len(matrix[0])
+	top, bottom, left, right := 0, row-1, 0, col-1
+	result, index := make([]int, row*col), 0 // make enough array
+	for {
+		// from left to right
+		for i := left; i <= right; i++ {
+			result[index] = matrix[top][i]
+			index++
+		}
+		top++
+		if top > bottom {
+			break
+		}
+
+		// from top to bottom
+		for i := top; i <= bottom; i++ {
+			result[index] = matrix[i][right]
+			index++
+		}
+		right--
+		if left > right {
+			break
+		}
+
+		// from right to left
+		for i := right; i >= left; i-- {
+			result[index] = matrix[bottom][i]
+			index++
+		}
+		bottom--
+		if top > bottom {
+			break
+		}
+
+		// from bottom to top
+		for i := bottom; i >= top; i-- {
+			result[index] = matrix[i][left]
+			index++
+		}
+		left++
+		if left > right {
+			break
+		}
+	}
+
+	return result
+}
+
+func spiralOrder1(matrix [][]int) []int {
 	if nil == matrix || len(matrix) == 0 {
 		return []int{}
 	}
@@ -91,4 +147,3 @@ func spiralOrder(matrix [][]int) []int {
 }
 
 // @lc code=end
-
