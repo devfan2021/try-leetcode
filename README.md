@@ -90,6 +90,7 @@
 | offer-13    | [Robot Move](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)                          | Medium     | [c](./lcof/offer-13-RobotMove.c)                   |
 | offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                      | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
 | offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                  | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
+| offer-15    | [Number Of 1 In Binary](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)                 | Easy       | [c](./lcof/offer-15-NumberOf1InBinary.c)           |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                | Medium     | [c](./lcof/offer-16-Power.c)                       |
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-26    | [Substructure In Tree](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                            | Medium     | [c](./lcof/offer-26-SubstructureInTree.c)          |
