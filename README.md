@@ -30,6 +30,7 @@
 | 59   | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)                                                             | Medium     | Array                                            | [golang][leetcode-59-golang]                         |
 | 62   | [Unique Paths](https://leetcode.com/problems/unique-paths/description/)                                                                     | Medium     | Array, Dynamic Programming                       | [golang][leetcode-62-golang]                         |
 | 63   | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/)                                                               | Medium     | Array, Dynamic Programming                       | [golang][leetcode-63-golang]                         |
+| 64   | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)                                                             | Medium     | Array, Dynamic Programming                       | [golang][leetcode-64-golang]                         |
 | 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                                                                 | Easy       | Tree, Depth-first Search,Breadth-first Search    | [golang][leetcode-101-golang]                        |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                                                     | Easy       | Tree, Depth-first Search                         | [golang][leetcode-110-golang]                        |
@@ -144,6 +145,7 @@ reference:
 [leetcode-59-golang]: ./algorithms/golang/59.spiral-matrix-ii.go
 [leetcode-62-golang]: ./algorithms/golang/62.unique-paths.go
 [leetcode-63-golang]: ./algorithms/golang/63.unique-paths-ii.go
+[leetcode-64-golang]: ./algorithms/golang/64.minimum-path-sum.go
 [leetcode-101-golang]: ./algorithms/golang/101.symmetric-tree.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go
 [leetcode-110-golang]: ./algorithms/golang/110.balanced-binary-tree.go
