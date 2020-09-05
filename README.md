@@ -12,7 +12,7 @@
 | 4    | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                       | Hard       | Array, Binary Search, Divide and Conquer         | [golang][leetcode-4-golang]                          |
 | 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)                                   | Medium     | String, Dynamic Programming                      | [golang][leetcode-5-golang]                          |
 | 6    | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)                                                           | Medium     | String                                           | [golang][leetcode-6-golang]                          |
-| 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                           | Easy       | Math                                             | [golang][leetcode-7-golang]                          |
+| 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                           | Easy       | Math                                             | [golang][leetcode-7-golang], [c][leetcode-7-c]       |
 | 8    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)                                               | Medium     | Math, String                                     | [golang][leetcode-8-golang]                          |
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-12-golang]                         |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
@@ -190,6 +190,7 @@ reference:
 <!-- C 题解源文件-->
 
 [leetcode-3-c]: ./algorithms/c/3.longest-substring-without-repeating-characters.c
+[leetcode-7-c]: ./algorithms/c/7.reverse-integer.c
 [leetcode-343-c]: ./algorithms/c/343.integer-break.c
 [leetcode-485-c]: ./algorithms/c/485.max-consecutive-ones.c
 [leetcode-1295-c]: ./algorithms/c/1295.find-numbers-with-even-number-of-digits.c
