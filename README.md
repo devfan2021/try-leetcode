@@ -34,6 +34,7 @@
 | 71   | [Simplify Path](https://leetcode.com/problems/simplify-path/description/)                                                                   | Medium     | String, Stack                                    | [golang][leetcode-71-golang]                         |
 | 73   | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)                                                           | Medium     | Array                                            | [golang][leetcode-73-golang]                         |
 | 74   | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                         | Medium     | Array, Binary Search                             | [golang][leetcode-74-golang]                         |
+| 75   | [Sort Colors](https://leetcode.com/problems/sort-colors/description/)                                                                       | Medium     | Array, Two Pointers, Sort                        | [golang][leetcode-75-golang]                         |
 | 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                                                                 | Easy       | Tree, Depth-first Search,Breadth-first Search    | [golang][leetcode-101-golang]                        |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                                                     | Easy       | Tree, Depth-first Search                         | [golang][leetcode-110-golang]                        |
@@ -152,6 +153,7 @@ reference:
 [leetcode-71-golang]: ./algorithms/golang/71.simplify-path.go
 [leetcode-73-golang]: ./algorithms/golang/73.set-matrix-zeroes.go
 [leetcode-74-golang]: ./algorithms/golang/74.search-a-2-d-matrix.go
+[leetcode-75-golang]: ./algorithms/golang/75.sort-colors.go
 [leetcode-101-golang]: ./algorithms/golang/101.symmetric-tree.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go
 [leetcode-110-golang]: ./algorithms/golang/110.balanced-binary-tree.go
