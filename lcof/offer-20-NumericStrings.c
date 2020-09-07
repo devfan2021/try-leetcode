@@ -212,6 +212,68 @@ bool isNumber(char *s)
   return st == STATE_INTEGER || st == STATE_POINT || st == STATE_FRACTION || st == STATE_EXP_NUMBER || st == STATE_END;
 }
 
+bool isNumber2(char *s)
+{
+  int i = 0;
+  int end = strlen(s) - 1;
+  int dot = 0;
+  int num = 0;
+  int numE = 0;
+  while (s[i] == ' ')
+  {
+    i++;
+  }
+
+  while (end >= 0 && s[end] == ' ')
+  {
+    end--;
+  }
+
+  if (s[i] == '+' || s[i] == '-')
+  {
+    i++;
+  }
+
+  while (i <= end)
+  {
+    if (s[i] >= '0' && s[i] <= '9')
+    {
+      num++;
+    }
+    else if (s[i] == '.')
+    {
+      dot++;
+    }
+    else if (s[i] == 'e' || s[i] == 'E')
+    {
+      if (dot > 0 || num == 0 || numE > 0)
+      {
+        return false;
+      }
+      numE++;
+      dot = 0;
+      num = 0;
+
+      if (i + 1 < end && (s[i + 1] == '+' || s[i + 1] == '-'))
+      {
+        i++;
+      }
+    }
+    else
+    {
+      return false;
+    }
+    i++;
+  }
+
+  if ((numE == 1 && dot > 0) || (numE == 0 && dot > 1))
+  {
+    return false;
+  }
+
+  return num > 0;
+}
+
 MU_TEST(test_case)
 {
   mu_check(isNumber("+100") == true);
