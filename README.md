@@ -14,6 +14,7 @@
 | 6    | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)                                                           | Medium     | String                                           | [golang][leetcode-6-golang]                          |
 | 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                           | Easy       | Math                                             | [golang][leetcode-7-golang], [c][leetcode-7-c]       |
 | 8    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)                                               | Medium     | Math, String                                     | [golang][leetcode-8-golang]                          |
+| 10   | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)                                       | Hard       | String,Dynamic Programming,Backtracking          | [golang][leetcode-10-golang]                         |
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)                                                             | Medium     | Math, String                                     | [golang][leetcode-12-golang]                         |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | Easy       | Math, String                                     | [golang][leetcode-13-golang]                         |
 | 17   | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                   | Medium     | String, Backtracking                             | [golang][leetcode-17-golang]                         |
@@ -103,6 +104,7 @@
 | offer-15    | [Number Of 1 In Binary](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)                 | Easy       | [c](./lcof/offer-15-NumberOf1InBinary.c)           |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                | Medium     | [c](./lcof/offer-16-Power.c)                       |
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
+| offer-20    | [Numeric Strings](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)                   | Medium     | [c](./lcof/offer-20-NumericStrings.c)              |
 | offer-26    | [Substructure In Tree](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                            | Medium     | [c](./lcof/offer-26-SubstructureInTree.c)          |
 | offer-27    | [Mirror Of Binary Tree](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                    | Easy       | [c](./lcof/offer-27-MirrorOfBinaryTree.c)          |
 | offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                   | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
@@ -136,6 +138,7 @@ reference:
 [leetcode-6-golang]: ./algorithms/golang/6.zig-zag-conversion.go
 [leetcode-7-golang]: ./algorithms/golang/7.reverse-integer.go
 [leetcode-8-golang]: ./algorithms/golang/8.string-to-integer-atoi.go
+[leetcode-10-golang]: ./algorithms/golang/10.regular-expression-matching.go
 [leetcode-12-golang]: ./algorithms/golang/12.integer-to-roman.go
 [leetcode-13-golang]: ./algorithms/golang/13.roman-to-integer.go
 [leetcode-17-golang]: ./algorithms/golang/17.letter-combinations-of-a-phone-number.go
