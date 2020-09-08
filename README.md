@@ -106,6 +106,7 @@
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                         | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-20    | [Numeric Strings](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)                            | Medium     | [c](./lcof/offer-20-NumericStrings.c)              |
 | offer-21    | [Reorder Array](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | Easy       | [c](./lcof/offer-21-ReorderArray.c)                |
+| offer-22    | [Kth Node From End](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)                  | Easy       | [c](./lcof/offer-22-KthNodeFromEnd.c)              |
 | offer-26    | [Substructure In Tree](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                                     | Medium     | [c](./lcof/offer-26-SubstructureInTree.c)          |
 | offer-27    | [Mirror Of Binary Tree](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                             | Easy       | [c](./lcof/offer-27-MirrorOfBinaryTree.c)          |
 | offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                            | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
