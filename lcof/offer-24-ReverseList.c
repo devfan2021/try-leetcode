@@ -54,6 +54,7 @@ struct ListNode *reverseList2(struct ListNode *head)
 
     curr->next = prev;
     prev = curr;
+
     curr = nextNode;
   }
 
