@@ -14,7 +14,6 @@ struct ListNode
   int val;
   struct ListNode *next;
 };
-
 struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
 {
   if (l1 == NULL && l2 == NULL)
@@ -23,6 +22,7 @@ struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
     return l2;
   else if (l2 == NULL)
     return l1;
+
   struct ListNode *head;
   struct ListNode *tail;
   if (l1->val <= l2->val) // 找出两个链表第一个值最小值选择做头部开始
@@ -35,6 +35,7 @@ struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
     head = l2;
     tail = l1;
   }
+
   struct ListNode *ret = head; // 用来返回的指针
   struct ListNode *p;          // 循环里用来转换的
   while (head->next != NULL && tail != NULL)
@@ -50,11 +51,43 @@ struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
     else
       head = head->next;
   }
+
   if (head->next == NULL) // 如果头部指针先走完，意味着尾部指针剩下的值全部大于头部最大值
   {
     head->next = tail;
   }
+
   return ret;
+}
+
+struct ListNode *mergeTwoLists1(struct ListNode *l1, struct ListNode *l2)
+{
+  if (l1 == NULL && l2 == NULL)
+  {
+    return NULL;
+  }
+  else if (l1 == NULL)
+  {
+    return l2;
+  }
+  else if (l2 == NULL)
+  {
+    return l1;
+  }
+
+  struct ListNode *res = NULL;
+  if (l1->val < l2->val)
+  {
+    res = l1;
+    res->next = mergeTwoLists1(l1->next, l2);
+  }
+  else
+  {
+    res = l2;
+    res->next = mergeTwoLists1(l1, l2->next);
+  }
+
+  return res;
 }
 
 MU_TEST(test_case)
