@@ -54,6 +54,7 @@
 | 257  | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)                                                           | Easy       | Tree, Depth-first-Search                         | [golang][leetcode-257-golang]                        |
 | 258  | [Add Digits](https://leetcode.com/problems/add-digits/description/)                                                                         | Easy       | Math                                             | [golang][leetcode-258-golang]                        |
 | 263  | [Ugly Number](https://leetcode.com/problems/ugly-number/description/)                                                                       | Easy       | Math                                             | [golang][leetcode-263-golang]                        |
+| 264  | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/)                                                                 | Medium     | Math,Dynamic Programming , Heap                  | [golang][leetcode-264-golang]                        |
 | 292  | [Nim Game](https://leetcode.com/problems/nim-game/)                                                                                         | Easy       | Brainteaser, Minimax                             | [golang][leetcode-292-golang]                        |
 | 299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/)                                                                 | Easy       | Hsh Table                                        | [golang][leetcode-299-golang]                        |
 | 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/)                                                                   | Medium     | Math, Dynamic Programming                        | [golang][leetcode-343-golang], [c][leetcode-343-c]   |
@@ -114,6 +115,7 @@
 | offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                            | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
 | offer-29    | [Print Matrix](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)                                  | Easy       | [c](./lcof/offer-29-PrintMatrix.c)                 |
 | offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                   | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
+| offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                       | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
 | offer-50-01 | [First Not Repeating Char](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)              | Easy       | [c](./lcof/offer-50-01-FirstNotRepeatingChar.c)    |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                        | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                           | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
@@ -182,6 +184,7 @@ reference:
 [leetcode-257-golang]: ./algorithms/golang/257.binary-tree-paths.go
 [leetcode-258-golang]: ./algorithms/golang/258.add-digits.go
 [leetcode-263-golang]: ./algorithms/golang/263.ugly-number.go
+[leetcode-264-golang]: ./algorithms/golang/264.ugly-number-ii.go
 [leetcode-292-golang]: ./algorithms/golang/292.nim-game.go
 [leetcode-299-golang]: ./algorithms/golang/299.bulls-and-cows.go
 [leetcode-343-golang]: ./algorithms/golang/343.integer-break.go
