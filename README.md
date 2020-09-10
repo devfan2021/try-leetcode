@@ -115,6 +115,7 @@
 | offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                            | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
 | offer-29    | [Print Matrix](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)                                  | Easy       | [c](./lcof/offer-29-PrintMatrix.c)                 |
 | offer-30    | [Mini Stack](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)                                      | Easy       | [c](./lcof/offer-30-MiniStack.c)                   |
+| offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                          | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
 | offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                   | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
 | offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                       | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
 | offer-50-01 | [First Not Repeating Char](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)              | Easy       | [c](./lcof/offer-50-01-FirstNotRepeatingChar.c)    |
