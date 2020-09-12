@@ -121,6 +121,7 @@
 | offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                          | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
 | offer-32-01 | [Print Tree From Top To Bottom](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)         | Medium     | [c](./lcof/offer-32-01-PrintTreeFromTopToBottom.c) |
 | offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                   | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
+| offer-47    | [Max Value Of Gifts](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)                                 | Medium     | [c](./lcof/offer-47-MaxValueOfGifts.c)             |
 | offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                       | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
 | offer-50-01 | [First Not Repeating Char](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)              | Easy       | [c](./lcof/offer-50-01-FirstNotRepeatingChar.c)    |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                        | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
