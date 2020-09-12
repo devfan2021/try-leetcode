@@ -87,52 +87,53 @@
 
 ## Offer Problems
 
-| #           | Title                                                                                                                | Difficulty | Solution                                           |
-| ----------- | -------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------- |
-| offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)                       | Easy       | [c](./lcof/offer-03-01-DuplicationInArray.c)       |
-| offer-03-02 | Duplication In Array No Edit                                                                                         |            | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
-| offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)            | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
-| offer-05    | [Replace Spaces](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)                                             | Easy       | [c](./lcof/offer-05-ReplaceSpaces.c)               |
-| offer-06    | [Print List In Reversed Order](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)             | Easy       | [c](./lcof/offer-06-PrintListInReversedOrder.c)    |
-| offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                                | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
-| offer-08    | Next Node In Binary Tree                                                                                             |            | [c](./lcof/offer-08-NextNodeInBinaryTrees.c)       |
-| offer-09    | [Queue With Two Stacks](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)                  | Easy       | [c](./lcof/offer-09-QueueWithTwoStacks.c)          |
-| offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                             | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
-| offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)           | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
-| offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                             | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
-| offer-13    | [Robot Move](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)                                   | Medium     | [c](./lcof/offer-13-RobotMove.c)                   |
-| offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                               | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
-| offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                           | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
-| offer-15    | [Number Of 1 In Binary](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)                          | Easy       | [c](./lcof/offer-15-NumberOf1InBinary.c)           |
-| offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                         | Medium     | [c](./lcof/offer-16-Power.c)                       |
-| offer-17    | [Print 1 To Max Of N Digits](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)             | Easy       | [c](./lcof/offer-17-Print1ToMaxOfNDigits.c)        |
-| offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                         | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
-| offer-20    | [Numeric Strings](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)                            | Medium     | [c](./lcof/offer-20-NumericStrings.c)              |
-| offer-21    | [Reorder Array](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | Easy       | [c](./lcof/offer-21-ReorderArray.c)                |
-| offer-22    | [Kth Node From End](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)                  | Easy       | [c](./lcof/offer-22-KthNodeFromEnd.c)              |
-| offer-23    | Entry Node In List Loop                                                                                              |            | [c](./lcof/offer-23-EntryNodeInListLoop.c)         |
-| offer-24    | [Reverse List](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)                                           | Easy       | [c](./lcof/offer-24-ReverseList.c)                 |
-| offer-25    | [Merge Sorted Lists](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)                    | Easy       | [c](./lcof/offer-25-MergeSortedLists.c)            |
-| offer-26    | [Substructure In Tree](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                                     | Medium     | [c](./lcof/offer-26-SubstructureInTree.c)          |
-| offer-27    | [Mirror Of Binary Tree](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                             | Easy       | [c](./lcof/offer-27-MirrorOfBinaryTree.c)          |
-| offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                            | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
-| offer-29    | [Print Matrix](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)                                  | Easy       | [c](./lcof/offer-29-PrintMatrix.c)                 |
-| offer-30    | [Mini Stack](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)                                      | Easy       | [c](./lcof/offer-30-MiniStack.c)                   |
-| offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                          | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
-| offer-32-01 | [Print Tree From Top To Bottom](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)         | Medium     | [c](./lcof/offer-32-01-PrintTreeFromTopToBottom.c) |
-| offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                   | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
-| offer-47    | [Max Value Of Gifts](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)                                 | Medium     | [c](./lcof/offer-47-MaxValueOfGifts.c)             |
-| offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                       | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
-| offer-50-01 | [First Not Repeating Char](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)              | Easy       | [c](./lcof/offer-50-01-FirstNotRepeatingChar.c)    |
-| offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                        | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
-| offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                           | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
-| offer-53-03 | Integer Identical To Index                                                                                           |            | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
-| offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                                 | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
-| offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)          | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
-| offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                                    | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
-| offer-64    | [Accumulate](https://leetcode-cn.com/problems/qiu-12n-lcof/)                                                         | Medium     | [c](./lcof/offer-64-Accumulate.c)                  |
-| offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)                      | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)               |
-| offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                                    | Easy       | [c](./lcof/offer-66-ConstuctArray.c)               |
+| #           | Title                                                                                                                   | Difficulty | Solution                                           |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------- |
+| offer-03-01 | [Duplication In Array](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)                          | Easy       | [c](./lcof/offer-03-01-DuplicationInArray.c)       |
+| offer-03-02 | Duplication In Array No Edit                                                                                            |            | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
+| offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)               | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
+| offer-05    | [Replace Spaces](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)                                                | Easy       | [c](./lcof/offer-05-ReplaceSpaces.c)               |
+| offer-06    | [Print List In Reversed Order](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)                | Easy       | [c](./lcof/offer-06-PrintListInReversedOrder.c)    |
+| offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                                   | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
+| offer-08    | Next Node In Binary Tree                                                                                                |            | [c](./lcof/offer-08-NextNodeInBinaryTrees.c)       |
+| offer-09    | [Queue With Two Stacks](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)                     | Easy       | [c](./lcof/offer-09-QueueWithTwoStacks.c)          |
+| offer-10    | [Fibonacci](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)                                                | Easy       | [c](./lcof/offer-10-Fibonacci.c)                   |
+| offer-11    | [Min Number In Rotated Array](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)              | Easy       | [c](./lcof/offer-11-MinNumberInRotatedArray.c)     |
+| offer-12    | [String Path In Matrix](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)                                | Medium     | [c](./lcof/offer-12-StringPathInMatrix.c)          |
+| offer-13    | [Robot Move](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)                                      | Medium     | [c](./lcof/offer-13-RobotMove.c)                   |
+| offer-14-01 | [Cutting Rope I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)                                                  | Medium     | [c](./lcof/offer-14-01-CuttingRope.c)              |
+| offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                              | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
+| offer-15    | [Number Of 1 In Binary](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)                             | Easy       | [c](./lcof/offer-15-NumberOf1InBinary.c)           |
+| offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                            | Medium     | [c](./lcof/offer-16-Power.c)                       |
+| offer-17    | [Print 1 To Max Of N Digits](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)                | Easy       | [c](./lcof/offer-17-Print1ToMaxOfNDigits.c)        |
+| offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                            | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
+| offer-20    | [Numeric Strings](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)                               | Medium     | [c](./lcof/offer-20-NumericStrings.c)              |
+| offer-21    | [Reorder Array](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)    | Easy       | [c](./lcof/offer-21-ReorderArray.c)                |
+| offer-22    | [Kth Node From End](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)                     | Easy       | [c](./lcof/offer-22-KthNodeFromEnd.c)              |
+| offer-23    | Entry Node In List Loop                                                                                                 |            | [c](./lcof/offer-23-EntryNodeInListLoop.c)         |
+| offer-24    | [Reverse List](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)                                              | Easy       | [c](./lcof/offer-24-ReverseList.c)                 |
+| offer-25    | [Merge Sorted Lists](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)                       | Easy       | [c](./lcof/offer-25-MergeSortedLists.c)            |
+| offer-26    | [Substructure In Tree](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)                                        | Medium     | [c](./lcof/offer-26-SubstructureInTree.c)          |
+| offer-27    | [Mirror Of Binary Tree](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)                                | Easy       | [c](./lcof/offer-27-MirrorOfBinaryTree.c)          |
+| offer-28    | [Symmetrical Binary Tree](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)                               | Easy       | [c](./lcof/offer-28-SymmetricalBinaryTree.c)       |
+| offer-29    | [Print Matrix](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)                                     | Easy       | [c](./lcof/offer-29-PrintMatrix.c)                 |
+| offer-30    | [Mini Stack](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)                                         | Easy       | [c](./lcof/offer-30-MiniStack.c)                   |
+| offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                             | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
+| offer-32-01 | [Print Tree From Top To Bottom](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)            | Medium     | [c](./lcof/offer-32-01-PrintTreeFromTopToBottom.c) |
+| offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                      | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
+| offer-47    | [Max Value Of Gifts](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)                                    | Medium     | [c](./lcof/offer-47-MaxValueOfGifts.c)             |
+| offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                          | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
+| offer-50-01 | [First Not Repeating Char](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)                 | Easy       | [c](./lcof/offer-50-01-FirstNotRepeatingChar.c)    |
+| offer-52    | [First Common Nodes In Lists](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) | Easy       | [c](./lcof/offer-52-FirstCommonNodesInLists.c)     |
+| offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                           | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
+| offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                              | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
+| offer-53-03 | Integer Identical To Index                                                                                              |            | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                                    | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
+| offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)             | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
+| offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                                       | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
+| offer-64    | [Accumulate](https://leetcode-cn.com/problems/qiu-12n-lcof/)                                                            | Medium     | [c](./lcof/offer-64-Accumulate.c)                  |
+| offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)                         | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)               |
+| offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                                       | Easy       | [c](./lcof/offer-66-ConstuctArray.c)               |
 
 reference:
 
