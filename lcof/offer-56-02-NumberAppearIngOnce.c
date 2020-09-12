@@ -9,9 +9,9 @@ int singleNumber(int *nums, int numsSize)
   for (int i = 0; i < 32; i++)
   {
     int tmp = 0; //记录所有数字第i位的和
-    for (int i = 0; i < numsSize; i++)
+    for (int j = 0; j < numsSize; j++)
     {
-      tmp += (nums[i] >> i) & 1; //求第i位之和
+      tmp += (nums[j] >> i) & 1; //求第i位之和
     }
 
     if (tmp % 3)
