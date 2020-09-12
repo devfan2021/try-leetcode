@@ -127,7 +127,9 @@
 | offer-52    | [First Common Nodes In Lists](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) | Easy       | [c](./lcof/offer-52-FirstCommonNodesInLists.c)     |
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                           | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                              | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
-| offer-53-03 | Integer Identical To Index                                                                                              |            | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-53-03 | Integer Identical To Index                                                                                              | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-55-01 | [Tree Depth](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)                                              | Easy       | [c](./lcof/offer-offer-55-01-TreeDepth.c)          |
+| offer-55-02 | [Balanced Binary Tree](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)                                     | Easy       | [c](./lcof/offer-offer-55-02-BalancedBinaryTree.c) |
 | offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                                    | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
 | offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)             | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
 | offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                                       | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
