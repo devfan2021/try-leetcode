@@ -29,18 +29,6 @@ int dfs(struct TreeNode *root)
   return max(left, right) + 1;
 }
 
-int absVal(int a, int b)
-{
-  if (a > b)
-  {
-    return a - b;
-  }
-  else
-  {
-    return b - a;
-  }
-}
-
 bool isBalanced(struct TreeNode *root)
 {
   if (root == NULL)
@@ -50,8 +38,40 @@ bool isBalanced(struct TreeNode *root)
 
   int left = dfs(root->left);
   int right = dfs(root->right);
+  if (left - right > 1 || right - left < -1)
+  {
+    return false;
+  }
 
-  return absVal(left, right) <= 1 && isBalanced(root->left) && isBalanced(root->right);
+  return isBalanced(root->left) && isBalanced(root->right);
+}
+
+bool helper(struct TreeNode *pRoot, int *pDepth)
+{
+  if (pRoot == NULL)
+  {
+    *pDepth = 0;
+    return true;
+  }
+
+  int left, right;
+  if (helper(pRoot->left, &left) && helper(pRoot->right, &right))
+  {
+    int diff = left - right;
+    if (diff <= 1 && diff >= -1)
+    {
+      *pDepth = 1 + (left > right ? left : right);
+      return true;
+    }
+  }
+
+  return false;
+}
+
+bool isBalanced2(struct TreeNode *root)
+{
+  int depth = 0;
+  return helper(root, &depth);
 }
 
 MU_TEST(test_case)
