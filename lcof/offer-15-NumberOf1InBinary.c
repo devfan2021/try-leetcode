@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "minunit.h"
 
+// https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
+
 int hammingWeight(uint32_t n)
 {
   int count = 0;
@@ -27,7 +29,12 @@ int hammingWeight1(uint32_t n)
 
 MU_TEST(test_case)
 {
-  mu_check(5 == 7);
+  mu_assert_int_eq(3, hammingWeight(00000000000000000000000000001011));
+  mu_assert_int_eq(3, hammingWeight1(00000000000000000000000000001011));
+  mu_assert_int_eq(1, hammingWeight(00000000000000000000000010000000));
+  mu_assert_int_eq(1, hammingWeight1(00000000000000000000000010000000));
+  // mu_assert_int_eq(31, hammingWeight(11111111111111111111111111111101));
+  // mu_assert_int_eq(31, hammingWeight1(11111111111111111111111111111101));
 }
 
 MU_TEST_SUITE(test_suite)

@@ -105,6 +105,7 @@
 | offer-14-02 | [Cutting Rope II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)                                           | Medium     | [c](./lcof/offer-14-02-CuttingRope.c)              |
 | offer-15    | [Number Of 1 In Binary](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)                          | Easy       | [c](./lcof/offer-15-NumberOf1InBinary.c)           |
 | offer-16    | [Power](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)                                         | Medium     | [c](./lcof/offer-16-Power.c)                       |
+| offer-17    | [Print 1 To Max Of N Digits](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)             | Easy       | [c](./lcof/offer-17-Print1ToMaxOfNDigits.c)        |
 | offer-18-01 | [Delete Note In List](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)                         | Easy       | [c](./lcof/offer-18-01-DeleteNodeInList.c)         |
 | offer-20    | [Numeric Strings](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)                            | Medium     | [c](./lcof/offer-20-NumericStrings.c)              |
 | offer-21    | [Reorder Array](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) | Easy       | [c](./lcof/offer-21-ReorderArray.c)                |
