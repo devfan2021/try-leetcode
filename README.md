@@ -54,7 +54,7 @@
 | 257  | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)                                                           | Easy       | Tree, Depth-first-Search                         | [golang][leetcode-257-golang]                        |
 | 258  | [Add Digits](https://leetcode.com/problems/add-digits/description/)                                                                         | Easy       | Math                                             | [golang][leetcode-258-golang]                        |
 | 263  | [Ugly Number](https://leetcode.com/problems/ugly-number/description/)                                                                       | Easy       | Math                                             | [golang][leetcode-263-golang]                        |
-| 264  | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/)                                                                 | Medium     | Math,Dynamic Programming , Heap                  | [golang][leetcode-264-golang]                        |
+| 264  | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/)                                                                 | Medium     | Math,Dynamic Programming , Heap                  | [golang][leetcode-264-golang], [c][leetcode-264-c]   |
 | 292  | [Nim Game](https://leetcode.com/problems/nim-game/)                                                                                         | Easy       | Brainteaser, Minimax                             | [golang][leetcode-292-golang]                        |
 | 299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/)                                                                 | Easy       | Hsh Table                                        | [golang][leetcode-299-golang]                        |
 | 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/)                                                                   | Medium     | Math, Dynamic Programming                        | [golang][leetcode-343-golang], [c][leetcode-343-c]   |
@@ -210,6 +210,7 @@ reference:
 
 [leetcode-3-c]: ./algorithms/c/3.longest-substring-without-repeating-characters.c
 [leetcode-7-c]: ./algorithms/c/7.reverse-integer.c
+[leetcode-264-c]: ./algorithms/c/264.ugly-number-ii.c
 [leetcode-343-c]: ./algorithms/c/343.integer-break.c
 [leetcode-485-c]: ./algorithms/c/485.max-consecutive-ones.c
 [leetcode-1295-c]: ./algorithms/c/1295.find-numbers-with-even-number-of-digits.c

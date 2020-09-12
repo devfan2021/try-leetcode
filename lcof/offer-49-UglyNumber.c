@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include "minunit.h"
 
-#define min(a, b) a > b ? b : a
+// https://leetcode-cn.com/problems/chou-shu-lcof/
+
+#define min(a, b) (a > b ? b : a)
 
 int nthUglyNumber(int n)
 {
@@ -32,6 +34,7 @@ int nthUglyNumber(int n)
 MU_TEST(test_case)
 {
   mu_assert_int_eq(12, nthUglyNumber(10));
+  mu_assert_int_eq(25, nthUglyNumber(16));
 }
 
 MU_TEST_SUITE(test_suite)
