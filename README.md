@@ -93,6 +93,7 @@
 | offer-03-02 | Duplication In Array No Edit                                                                                         |            | [c](./lcof/offer-03-02-DuplicationInArrayNoEdit.c) |
 | offer-04    | [Find In Partially Sorted Matrix](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)            | Easy       | [c](./lcof/offer-04-FindInPartiallySortedMatrix.c) |
 | offer-05    | [Replace Spaces](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)                                             | Easy       | [c](./lcof/offer-05-ReplaceSpaces.c)               |
+| offer-06    | [Print List In Reversed Order](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)             | Easy       | [c](./lcof/offer-06-PrintListInReversedOrder.c)    |
 | offer-07    | [Construct Binary Tree](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)                                | Medium     | [c](./lcof/offer-07-ConstructBinaryTree.c)         |
 | offer-08    | Next Node In Binary Tree                                                                                             |            | [c](./lcof/offer-08-NextNodeInBinaryTrees.c)       |
 | offer-09    | [Queue With Two Stacks](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)                  | Easy       | [c](./lcof/offer-09-QueueWithTwoStacks.c)          |
