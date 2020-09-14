@@ -128,6 +128,7 @@
 | offer-53-01 | [Number Of K](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)                           | Easy       | [c](./lcof/offer-53-01-NumberOfK.c)                |
 | offer-53-02 | [Missing Number](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)                                              | Easy       | [c](./lcof/offer-53-02-MissingNumber.c)            |
 | offer-53-03 | Integer Identical To Index                                                                                              | Easy       | [c](./lcof/offer-53-03-IntegerIdenticalToIndex.c)  |
+| offer-54    | [Kth Node In BST](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)                         | Easy       | [c](./lcof/offer-54-KthNodeInBST.c)                |
 | offer-55-01 | [Tree Depth](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)                                              | Easy       | [c](./lcof/offer-55-01-TreeDepth.c)                |
 | offer-55-02 | [Balanced Binary Tree](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)                                     | Easy       | [c](./lcof/offer-55-02-BalancedBinaryTree.c)       |
 | offer-56-01 | [Numbers Appear Once](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)                    | Medium     | [c](./lcof/offer-56-01-NumbersAppearOnce.c)        |
