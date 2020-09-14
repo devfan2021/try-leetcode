@@ -133,6 +133,7 @@
 | offer-56-01 | [Numbers Appear Once](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)                    | Medium     | [c](./lcof/offer-56-01-NumbersAppearOnce.c)        |
 | offer-56-02 | [Numbers Appearing Once](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)              | Medium     | [c](./lcof/offer-56-02-NumberAppearIngOnce.c)      |
 | offer-57-01 | [Two Numbers With Sum](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)                               | Easy       | [c](./lcof/offer-57-01-TwoNumbersWithSum.c)        |
+| offer-57-02 | [Continuous Squence With Sum](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)               | Easy       | [c](./lcof/offer-57-02-ContinuousSquenceWithSum.c) |
 | offer-61    | [Continous Cards](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)                                    | Easy       | [c](./lcof/offer-61-ContinousCards.c)              |
 | offer-62    | [Last Number In Circle](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)             | Easy       | [c](./lcof/offer-62-LastNumberInCircle.c)          |
 | offer-63    | [Maximal Profit](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)                                       | Medium     | [c](./lcof/offer-63-MaximalProfit.c)               |
