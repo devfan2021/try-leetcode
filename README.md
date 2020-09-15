@@ -145,6 +145,8 @@
 | offer-64    | [Accumulate](https://leetcode-cn.com/problems/qiu-12n-lcof/)                                                            | Medium     | [c](./lcof/offer-64-Accumulate.c)                  |
 | offer-65    | [Add Two Numbers](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)                         | Easy       | [c](./lcof/offer-65-AddTwoNumbers.c)               |
 | offer-66    | [Constuct Array](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)                                       | Easy       | [c](./lcof/offer-66-ConstuctArray.c)               |
+| offer-68-01 | [Common Parent In Tree](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)         | Easy       | [c](./lcof/offer-68-01-CommonParentInTree.c)       |
+| offer-68-02 | [Common Parent In Tree](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)                 | Easy       | [c](./lcof/offer-68-02-CommonParentInTree.c)       |
 
 reference:
 
