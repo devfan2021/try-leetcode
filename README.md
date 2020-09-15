@@ -120,6 +120,7 @@
 | offer-30    | [Mini Stack](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)                                         | Easy       | [c](./lcof/offer-30-MiniStack.c)                   |
 | offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                             | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
 | offer-32-01 | [Print Tree From Top To Bottom](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)            | Medium     | [c](./lcof/offer-32-01-PrintTreeFromTopToBottom.c) |
+| offer-33    | [Squence Of BST](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)                    | Medium     | [c](./lcof/offer-33-SquenceOfBST.c)                |
 | offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                      | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
 | offer-47    | [Max Value Of Gifts](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)                                    | Medium     | [c](./lcof/offer-47-MaxValueOfGifts.c)             |
 | offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                          | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
