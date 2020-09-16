@@ -14,7 +14,7 @@ int comp(const void *a, const void *b)
 
 int *getLeastNumbers(int *arr, int arrSize, int k, int *returnSize)
 {
-  if (arr == NULL || arrSize == 0)
+  if (arr == NULL || arrSize == 0 || k == 0)
   {
     *returnSize = 0;
     return NULL;
@@ -35,14 +35,14 @@ int partition(int *a, int left, int right)
   int pivot = a[left];
   while (left < right)
   {
-    while (left < right && a[right] > pivot)
+    while (left < right && a[right] >= pivot)
     {
       right--;
     }
 
     a[left] = a[right];
 
-    while (left < right && a[left] < pivot)
+    while (left < right && a[left] <= pivot)
     {
       left++;
     }
@@ -54,11 +54,12 @@ int partition(int *a, int left, int right)
 
 int *getLeastNumbers2(int *arr, int arrSize, int k, int *returnSize)
 {
-  if (arr == NULL || arrSize == 0)
+  if (arr == NULL || arrSize == 0 || k == 0)
   {
     *returnSize = 0;
     return NULL;
   }
+
   int left = 0, right = arrSize - 1, pivotPos = partition(arr, left, right);
   while (k != (pivotPos + 1))
   {
@@ -66,9 +67,9 @@ int *getLeastNumbers2(int *arr, int arrSize, int k, int *returnSize)
     {
       left = pivotPos + 1;
     }
-    else if (k < (pivotPos + 1))
+    else
     {
-      right = pivotPos + 1;
+      right = pivotPos - 1;
     }
     pivotPos = partition(arr, left, right);
   }
