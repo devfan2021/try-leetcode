@@ -123,6 +123,7 @@
 | offer-32-02 | [Print Trees In Lines](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)                  | Easy       | [c](./lcof/offer-32-02-PrintTreesInLines.c)        |
 | offer-33    | [Squence Of BST](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)                    | Medium     | [c](./lcof/offer-33-SquenceOfBST.c)                |
 | offer-39    | [More Than Half Number](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-39-MoreThanHalfNumber.c)          |
+| offer-40    | [K Least Numbers](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)                                           | Easy       | [c](./lcof/offer-40-KLeastNumbers.c)               |
 | offer-42    | [Greatest Sum Of Subarrays](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)                      | Easy       | [c](./lcof/offer-42-GreatestSumOfSubarrays.c)      |
 | offer-47    | [Max Value Of Gifts](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)                                    | Medium     | [c](./lcof/offer-47-MaxValueOfGifts.c)             |
 | offer-49    | [Ugly Number](https://leetcode-cn.com/problems/chou-shu-lcof/)                                                          | Easy       | [c](./lcof/offer-49-UglyNumber.c)                  |
