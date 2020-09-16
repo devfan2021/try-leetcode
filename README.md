@@ -121,6 +121,7 @@
 | offer-31    | [Stack Push Pop Order](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)                             | Medium     | [c](./lcof/offer-31-StackPushPopOrder.c)           |
 | offer-32-01 | [Print Tree From Top To Bottom](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)            | Medium     | [c](./lcof/offer-32-01-PrintTreeFromTopToBottom.c) |
 | offer-32-02 | [Print Trees In Lines](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)                  | Easy       | [c](./lcof/offer-32-02-PrintTreesInLines.c)        |
+| offer-32-03 | [Print Trees In Zigzag](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)                | Medium     | [c](./lcof/offer-32-03-PrintTreesInZigzag.c)       |
 | offer-33    | [Squence Of BST](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)                    | Medium     | [c](./lcof/offer-33-SquenceOfBST.c)                |
 | offer-39    | [More Than Half Number](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)  | Easy       | [c](./lcof/offer-39-MoreThanHalfNumber.c)          |
 | offer-40    | [K Least Numbers](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)                                           | Easy       | [c](./lcof/offer-40-KLeastNumbers.c)               |
