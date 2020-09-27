@@ -49,7 +49,36 @@
 
 // @lc code=start
 func isPalindrome(x int) bool {
-	return isPalindrome1(x)
+	return isPalindrome4(x)
+}
+
+// time complexity:10的对数, space complexity:
+func isPalindrome4(x int) bool {
+	if x < 0 || (x%10 == 0 && x != 0) {
+		return false
+	}
+
+	reverseX := 0
+	for x > reverseX {
+		reverseX = reverseX*10 + x%10
+		x /= 10
+	}
+
+	return reverseX == x || x == reverseX/10
+}
+
+func isPalindrome3(x int) bool {
+	if x < 0 {
+		return false
+	}
+
+	originX, reverseX := x, 0
+	for x > 0 {
+		reverseX = reverseX*10 + x%10
+		x /= 10
+	}
+
+	return reverseX == originX
 }
 
 // topest version
