@@ -68,6 +68,7 @@
 | 654  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)                                                       | Medium     | Tree                                             | [golang][leetcode-654-golang]                        |
 | 687  | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/description/)                                                   | Easy       | Tree, Recursion                                  | [golang][leetcode-687-golang]                        |
 | 783  | [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)                         | Easy       | Tree, Recursion                                  | [golang][leetcode-783-golang]                        |
+| 908  | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)                                                             | Easy       | Array, Math                                      | [golang][leetcode-908-golang]
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang][leetcode-1137-golang]                       |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/)               | Easy       | Array                                            | [golang][leetcode-1295-golang], [c][leetcode-1295-c] |
 
@@ -229,6 +230,7 @@ reference:
 [leetcode-654-golang]: ./algorithms/golang/654.maximum-binary-tree.go
 [leetcode-687-golang]: ./algorithms/golang/687.longest-univalue-path.go
 [leetcode-783-golang]: ./algorithms/golang/783.minimum-distance-between-bst-nodes.go
+[leetcode-908-golang]: ./algorithms/golang/908.smallest-range-i.go
 [leetcode-1137-golang]: ./algorithms/golang/1137.n-th-tribonacci-number.go
 [leetcode-1295-golang]: ./algorithms/golang/1295.find-numbers-with-even-number-of-digits.go
 
