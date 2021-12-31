@@ -71,6 +71,8 @@
 | 908  | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)                                                             | Easy       | Array, Math                                      | [golang][leetcode-908-golang]
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang][leetcode-1137-golang]                       |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/)               | Easy       | Array                                            | [golang][leetcode-1295-golang], [c][leetcode-1295-c] |
+| 1749 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)                                 | Medium     | Array, Dynamic Programming                       | [golang][leetcode-1749-golang]
+
 
 ## LeetCode Database
 
@@ -233,6 +235,7 @@ reference:
 [leetcode-908-golang]: ./algorithms/golang/908.smallest-range-i.go
 [leetcode-1137-golang]: ./algorithms/golang/1137.n-th-tribonacci-number.go
 [leetcode-1295-golang]: ./algorithms/golang/1295.find-numbers-with-even-number-of-digits.go
+[leetcode-1749-golang]: ./algorithms/golang/1749.maximum-absolute-sum-of-any-subarray.go
 
 <!-- C 题解源文件-->
 
