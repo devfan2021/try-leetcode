@@ -226,7 +226,7 @@ reference:
 [leetcode-299-golang]: ./algorithms/golang/299.bulls-and-cows.go
 [leetcode-343-golang]: ./algorithms/golang/343.integer-break.go
 [leetcode-345-golang]: ./algorithms/golang/345.reverse-vowels-of-a-string.go
-[leetcode-383-golang]: ./algorithms/golang/383.ransom-note.**go**
+[leetcode-383-golang]: ./algorithms/golang/383.ransom-note.go
 [leetcode-389-golang]: ./algorithms/golang/389.find-the-difference.go
 [leetcode-485-golang]: ./algorithms/golang/485.max-consecutive-ones.go
 [leetcode-496-golang]: ./algorithms/golang/496.next-greater-element-i.go
