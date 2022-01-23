@@ -60,7 +60,7 @@
 | 299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/)                                                                 | Easy       | Hsh Table                                        | [golang][leetcode-299-golang]                        |
 | 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/)                                                                   | Medium     | Math, Dynamic Programming                        | [golang][leetcode-343-golang], [c][leetcode-343-c]   |
 | 345  | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)                                                     | Easy       | String, Two Pointers                             | [golang][leetcode-345-golang]                        |
-| 383  | [Ransom Note](https://leetcode.com/problems/ransom-note/description/)                                                                       | Easy       | String, Hash Table                               | [golang][leetcode-383-golang]
+| 383  | [Ransom Note](https://leetcode.com/problems/ransom-note/description/)                                                                       | Easy       | String, Hash Table                               | [golang][leetcode-383-golang]                        |
 | 389  | [Find the Difference](https://leetcode.com/problems/find-the-difference/description/)                                                       | Easy       | Hash Table, Bit Manipulation                     | [golang][leetcode-389-golang]                        |
 | 485  | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)                                                     | Easy       | Array                                            | [golang][leetcode-485-golang], [c][leetcode-485-c]   |
 | 496  | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)                                                 | Easy       | Stack                                            | [golang][leetcode-496-golang]                        |
@@ -70,7 +70,8 @@
 | 654  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)                                                       | Medium     | Tree                                             | [golang][leetcode-654-golang]                        |
 | 687  | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/description/)                                                   | Easy       | Tree, Recursion                                  | [golang][leetcode-687-golang]                        |
 | 783  | [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)                         | Easy       | Tree, Recursion                                  | [golang][leetcode-783-golang]                        |
-| 908  | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)                                                             | Easy       | Array, Math                                      | [golang][leetcode-908-golang]
+| 796  | [Rotate String](https://leetcode.com/problems/rotate-string/)                                                                               | Easy       | String, String Matching                          | [golang][leetcode-796-golang]                        |
+| 908  | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)                                                             | Easy       | Array, Math                                      | [golang][leetcode-908-golang]                        |
 | 1137 | [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/submissions/)                                                 | Easy       | Recursion                                        | [golang][leetcode-1137-golang]                       |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/)               | Easy       | Array                                            | [golang][leetcode-1295-golang], [c][leetcode-1295-c] |
 | 1749 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)                                 | Medium     | Array, Dynamic Programming                       | [golang][leetcode-1749-golang]
@@ -236,6 +237,7 @@ reference:
 [leetcode-654-golang]: ./algorithms/golang/654.maximum-binary-tree.go
 [leetcode-687-golang]: ./algorithms/golang/687.longest-univalue-path.go
 [leetcode-783-golang]: ./algorithms/golang/783.minimum-distance-between-bst-nodes.go
+[leetcode-796-golang]: ./algorithms/golang/796.rotate-string.go
 [leetcode-908-golang]: ./algorithms/golang/908.smallest-range-i.go
 [leetcode-1137-golang]: ./algorithms/golang/1137.n-th-tribonacci-number.go
 [leetcode-1295-golang]: ./algorithms/golang/1295.find-numbers-with-even-number-of-digits.go

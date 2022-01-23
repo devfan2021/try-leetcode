@@ -40,10 +40,12 @@
  *
  *
  */
-// "awuvupcrsatnwvxsdbonhyszidtchtisxbiqaekyervvjwfrakopukxbsoorjyioppbqhjmmjzvtjijbubhqhsdtsflvopozqufp"
-// "qufpawuvupcrsatnwvxsdbonhyszidtchtisxbiqaekyervvjwfrakopukxbsoorjyioppbqhjmmjzvtjijbubhqhsdtsflvopoz"
 // @lc code=start
 func rotateString(s string, goal string) bool {
+	return solution2(s, goal)
+}
+
+func solution1(s string, goal string) bool {
 	if len(s) != len(goal) {
 		return false
 	}
@@ -52,30 +54,16 @@ func rotateString(s string, goal string) bool {
 		return true
 	}
 
-	sIndex, gIndex := 0, 0
-	for index1, val1 := range goal {
-		for index2 := sIndex; index2 < len(s); index2 += 1 {
-			sIndex = index2 + 1
-			if (byte)val1 == s[index2] {
-				break
-			}
-		}
-		gIndex = index1 + 1
-	}
-
-	// fmt.Printf("%d---%d", gIndex, sIndex)
-	if gIndex == len(goal) || sIndex != len(s) {
-		return false
-	}
-
-	for index := 0; index < len(goal)-gIndex; index += 1 {
-		if s[index] != goal[gIndex+index] {
-			//fmt.Printf("bb")
-			return false
+	for i := 0; i <= len(s); i++ {
+		if strings.Compare(s[i:]+s[:i], goal) == 0 {
+			return true
 		}
 	}
+	return false
+}
 
-	return true
+func solution2(s string, goal string) bool {
+	return len(s) == len(goal) && strings.Contains(s+s, goal)
 }
 
 // @lc code=end
