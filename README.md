@@ -69,6 +69,7 @@
 | 566  | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/description/)                                                         | Easy       | Array                                            | [golang][leetcode-566-golang]                        |
 | 654  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)                                                       | Medium     | Tree                                             | [golang][leetcode-654-golang]                        |
 | 687  | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/description/)                                                   | Easy       | Tree, Recursion                                  | [golang][leetcode-687-golang]                        |
+| 717  | [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)                                         | Easy       | Array                                            | [golang][leetcode-717-golang]                        |
 | 783  | [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)                         | Easy       | Tree, Recursion                                  | [golang][leetcode-783-golang]                        |
 | 796  | [Rotate String](https://leetcode.com/problems/rotate-string/)                                                                               | Easy       | String, String Matching                          | [golang][leetcode-796-golang]                        |
 | 908  | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)                                                             | Easy       | Array, Math                                      | [golang][leetcode-908-golang]                        |
@@ -236,6 +237,7 @@ reference:
 [leetcode-566-golang]: ./algorithms/golang/566.reshape-the-matrix.go
 [leetcode-654-golang]: ./algorithms/golang/654.maximum-binary-tree.go
 [leetcode-687-golang]: ./algorithms/golang/687.longest-univalue-path.go
+[leetcode-717-golang]: ./algorithms/golang/717.1-bit-and-2-bit-characters.go
 [leetcode-783-golang]: ./algorithms/golang/783.minimum-distance-between-bst-nodes.go
 [leetcode-796-golang]: ./algorithms/golang/796.rotate-string.go
 [leetcode-908-golang]: ./algorithms/golang/908.smallest-range-i.go
