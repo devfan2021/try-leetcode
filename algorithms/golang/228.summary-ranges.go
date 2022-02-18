@@ -111,16 +111,16 @@ func solution2(nums []int) []string {
 	var retVals []string
 	head := 0
 	for index := range nums {
-		if index < len(nums)-1 && (nums[i]+1) == nums[i+1] {
+		if index < len(nums)-1 && (nums[index]+1) == nums[index+1] {
 			continue
 		}
 
 		if head == index {
 			retVals = append(retVals, strconv.Itoa(nums[index]))
 		} else {
-			retVals = append(retVals, strconv.Itoa(head)+"->"+strconv.Itoa(nums[index]))
+			retVals = append(retVals, strconv.Itoa(nums[head])+"->"+strconv.Itoa(nums[index]))
 		}
-		head = i + 1
+		head = index + 1
 	}
 	return retVals
 }
