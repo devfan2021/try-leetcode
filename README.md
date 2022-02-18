@@ -77,6 +77,7 @@
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/)               | Easy       | Array                                            | [golang][leetcode-1295-golang], [c][leetcode-1295-c] |
 | 1446 | [Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)                                                             | Easy       | String                                           | [golang][leetcode-1446-golang]                       |
 | 1749 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)                                 | Medium     | Array, Dynamic Programming                       | [golang][leetcode-1749-golang]                       |
+| 1941 | [Check if All Characters Have Equal Number](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)        | Easy       | Hash Table, String, counting                     | [golang][leetcode-1941-golang]                       |
 
 
 ## LeetCode Database
@@ -246,6 +247,7 @@ reference:
 [leetcode-1295-golang]: ./algorithms/golang/1295.find-numbers-with-even-number-of-digits.go
 [leetcode-1446-golang]: ./algorithms/golang/1446.consecutive-characters.go
 [leetcode-1749-golang]: ./algorithms/golang/1749.maximum-absolute-sum-of-any-subarray.go
+[leetcode-1941-golang]: ./algorithms/golang/1941.check-if-all-characters-have-equal-number-of-occurrences.go
 
 <!-- C 题解源文件-->
 
