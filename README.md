@@ -58,6 +58,7 @@
 | 264  | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/)                                                                 | Medium     | Math,Dynamic Programming , Heap                  | [golang][leetcode-264-golang], [c][leetcode-264-c]   |
 | 292  | [Nim Game](https://leetcode.com/problems/nim-game/)                                                                                         | Easy       | Brainteaser, Minimax                             | [golang][leetcode-292-golang]                        |
 | 299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/)                                                                 | Easy       | Hsh Table                                        | [golang][leetcode-299-golang]                        |
+| 326  | [Power of Three](https://leetcode.com/problems/power-of-three/description/)                                                                 | Easy       | Math, Recursion                                  | [golang][leetcode-326-golang]                        |
 | 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/)                                                                   | Medium     | Math, Dynamic Programming                        | [golang][leetcode-343-golang], [c][leetcode-343-c]   |
 | 345  | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)                                                     | Easy       | String, Two Pointers                             | [golang][leetcode-345-golang]                        |
 | 383  | [Ransom Note](https://leetcode.com/problems/ransom-note/description/)                                                                       | Easy       | String, Hash Table                               | [golang][leetcode-383-golang]                        |
@@ -229,6 +230,7 @@ reference:
 [leetcode-264-golang]: ./algorithms/golang/264.ugly-number-ii.go
 [leetcode-292-golang]: ./algorithms/golang/292.nim-game.go
 [leetcode-299-golang]: ./algorithms/golang/299.bulls-and-cows.go
+[leetcode-326-golang]: ./algorithms/golang/326.power-of-three.go
 [leetcode-343-golang]: ./algorithms/golang/343.integer-break.go
 [leetcode-345-golang]: ./algorithms/golang/345.reverse-vowels-of-a-string.go
 [leetcode-383-golang]: ./algorithms/golang/383.ransom-note.go
