@@ -62,6 +62,7 @@
 | 345  | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)                                                     | Easy       | String, Two Pointers                             | [golang][leetcode-345-golang]                        |
 | 383  | [Ransom Note](https://leetcode.com/problems/ransom-note/description/)                                                                       | Easy       | String, Hash Table                               | [golang][leetcode-383-golang]                        |
 | 389  | [Find the Difference](https://leetcode.com/problems/find-the-difference/description/)                                                       | Easy       | Hash Table, Bit Manipulation                     | [golang][leetcode-389-golang]                        |
+| 412  | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/)                                                                           | Easy       | Math, String, Simulation                         | [golang][leetcode-412-golang]                        |
 | 485  | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)                                                     | Easy       | Array                                            | [golang][leetcode-485-golang], [c][leetcode-485-c]   |
 | 496  | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)                                                 | Easy       | Stack                                            | [golang][leetcode-496-golang]                        |
 | 530  | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)                                     | Easy       | Tree                                             | [golang][leetcode-530-golang]                        |
@@ -232,6 +233,7 @@ reference:
 [leetcode-345-golang]: ./algorithms/golang/345.reverse-vowels-of-a-string.go
 [leetcode-383-golang]: ./algorithms/golang/383.ransom-note.go
 [leetcode-389-golang]: ./algorithms/golang/389.find-the-difference.go
+[leetcode-412-golang]: ./algorithms/golang/412.fizz-buzz.go
 [leetcode-485-golang]: ./algorithms/golang/485.max-consecutive-ones.go
 [leetcode-496-golang]: ./algorithms/golang/496.next-greater-element-i.go
 [leetcode-530-golang]: ./algorithms/golang/530.minimum-absolute-difference-in-bst.go
