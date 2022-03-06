@@ -37,6 +37,7 @@
 | 74   | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)                                                         | Medium     | Array, Binary Search                             | [golang][leetcode-74-golang]                         |
 | 75   | [Sort Colors](https://leetcode.com/problems/sort-colors/description/)                                                                       | Medium     | Array, Two Pointers, Sort                        | [golang][leetcode-75-golang]                         |
 | 79   | [Word Search](https://leetcode.com/problems/word-search/description/)                                                                       | Medium     | Array, Backtracking                              | [golang][leetcode-79-golang]                         |
+| 91   | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                                                   | Medium     | String, Dynamic Programming                      | [golang][leetcode-91-golang]                         |
 | 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)                                                                 | Easy       | Tree, Depth-first Search,Breadth-first Search    | [golang][leetcode-101-golang]                        |
 | 108  | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)         | Easy       | Tree, Depth-first Search                         | [golang][leetcode-108-golang]                        |
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)                                                     | Easy       | Tree, Depth-first Search                         | [golang][leetcode-110-golang]                        |
@@ -209,6 +210,7 @@ reference:
 [leetcode-74-golang]: ./algorithms/golang/74.search-a-2-d-matrix.go
 [leetcode-75-golang]: ./algorithms/golang/75.sort-colors.go
 [leetcode-79-golang]: ./algorithms/golang/79.word-search.go
+[leetcode-91-golang]: ./algorithms/golang/91.decode-ways.go
 [leetcode-101-golang]: ./algorithms/golang/101.symmetric-tree.go
 [leetcode-108-golang]: ./algorithms/golang/108.convert-sorted-array-to-binary-search-tree.go
 [leetcode-110-golang]: ./algorithms/golang/110.balanced-binary-tree.go
