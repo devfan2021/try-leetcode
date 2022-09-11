@@ -77,7 +77,7 @@ public class MinNumber {
 
 	public static void main(String[] args) {
 		MinNumber minNumber = new MinNumber();
-		int[] vals = {8, 3, 10, 2, 7, 6, 9, 12};
+		int[] vals = { 8, 3, 10, 2, 7, 6, 9, 12 };
 		minNumber.quickSort(vals, 0, vals.length - 1);
 		for (int i = 0; i < vals.length; i++) {
 			System.out.print(vals[i] + ",");
@@ -85,7 +85,7 @@ public class MinNumber {
 
 		System.out.println();
 
-		int[] vals2 = {8, 3, 10, 2, 8, 6, 10, 12};
+		int[] vals2 = { 8, 3, 10, 2, 8, 6, 10, 12 };
 		minNumber.quickSort(vals2, 0, vals2.length - 1);
 		for (int i = 0; i < vals2.length; i++) {
 			System.out.print(vals2[i] + ",");
