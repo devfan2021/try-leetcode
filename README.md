@@ -28,6 +28,7 @@
 | 50   | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/)                                                                              | Medium     | Math, Binary Search                              | [golang][leetcode-50-golang]                         |
 | 54   | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)                                                                   | Medium     | Array                                            | [golang][leetcode-54-golang]                         |
 | 55   | [Jump Game](https://leetcode.com/problems/jump-game/description/)                                                                           | Medium     | Array, Greedy                                    | [golang][leetcode-55-golang]                         |
+| 57   | [Insert Interval](https://leetcode.com/problems/insert-interval/description/)                                                               | Medium     | Array                                            | [golang][leetcode-57-golang], [java][leetcode-57-java] |
 | 59   | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)                                                             | Medium     | Array                                            | [golang][leetcode-59-golang]                         |
 | 62   | [Unique Paths](https://leetcode.com/problems/unique-paths/description/)                                                                     | Medium     | Array, Dynamic Programming                       | [golang][leetcode-62-golang]                         |
 | 63   | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/)                                                               | Medium     | Array, Dynamic Programming                       | [golang][leetcode-63-golang]                         |
@@ -203,6 +204,8 @@ reference:
 [leetcode-50-golang]: ./algorithms/golang/50.pow-x-n.go
 [leetcode-54-golang]: ./algorithms/golang/54.spiral-matrix.go
 [leetcode-55-golang]: ./algorithms/golang/55.jump-game.go
+[leetcode-56-golang]: ./algorithms/golang/56.merge-intervals.go
+[leetcode-57-golang]: ./algorithms/golang/57.insert-interval.go
 [leetcode-59-golang]: ./algorithms/golang/59.spiral-matrix-ii.go
 [leetcode-62-golang]: ./algorithms/golang/62.unique-paths.go
 [leetcode-63-golang]: ./algorithms/golang/63.unique-paths-ii.go
@@ -259,8 +262,10 @@ reference:
 [leetcode-1749-golang]: ./algorithms/golang/1749.maximum-absolute-sum-of-any-subarray.go
 [leetcode-1941-golang]: ./algorithms/golang/1941.check-if-all-characters-have-equal-number-of-occurrences.go
 
-<!-- C 题解源文件-->
+<!-- java 题解源文件-->
+[leetcode-57-java]: ./algorithms/java/57.insert-interval.java
 
+<!-- C 题解源文件-->
 [leetcode-3-c]: ./algorithms/c/3.longest-substring-without-repeating-characters.c
 [leetcode-7-c]: ./algorithms/c/7.reverse-integer.c
 [leetcode-264-c]: ./algorithms/c/264.ugly-number-ii.c
